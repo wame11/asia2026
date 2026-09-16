@@ -3,298 +3,1733 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>In Memory of Artemis, Elizabeth & Nugget</title>
+<meta name="theme-color" content="#0b2545">
+<title>Asia 2026 — Japan &amp; South Korea</title>
+<meta name="description" content="Ross Family · Japan &amp; South Korea · 16–31 October 2026">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗾</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Spectral:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --goal: 750;        /* fundraising target (£) */
-    --raised-default: 0;/* starting total before any admin edits */
-    --ink:#0a0e16;--slate:#10182a;--steel:#1c2740;--mist:#cdd6e8;--mute:#8b97b3;
-    --bronze:#c8893d;--bronze-lo:#9a6428;--gold:#e6b367;--line:rgba(200,137,61,.22);
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:'Spectral',Georgia,serif;background:var(--ink);color:var(--mist);
-    line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+:root{
+  --navy:#07203f;      /* darkest */
+  --deep:#0f3157;
+  --ink:#0b2545;
+  --blue:#13457e;
+  --mid:#1f6fc4;
+  --sky:#3f9ae0;
+  --pale:#e6f0fb;
+  --pale2:#f3f8fd;
+  --line:#cfe1f3;
+  --line2:#e4eefa;
+  --body:#2f4459;
+  --muted:#65809a;
+  --white:#fff;
+  --warn:#b4531a;
+  --warnbg:#fff4ea;
+  --good:#0d6b4f;
+  --goodbg:#eaf7f2;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(11,37,69,.06), 0 8px 24px rgba(11,37,69,.07);
+  --shadow-lg:0 2px 6px rgba(11,37,69,.08), 0 18px 48px rgba(11,37,69,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  background:var(--white);color:var(--body);line-height:1.62;
+  font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Fraunces','Inter',Georgia,serif;color:var(--ink);line-height:1.15;font-weight:700}
+a{color:var(--mid);text-decoration:none;border-bottom:1px solid rgba(31,111,196,.3)}
+a:hover{color:var(--blue);border-bottom-color:var(--blue)}
+strong{color:var(--ink);font-weight:600}
+.wrap{max-width:940px;margin:0 auto;padding:0 16px}
 
-  .sky{position:fixed;inset:0;z-index:-2;
-    background:radial-gradient(120% 80% at 50% 0%, #1a2742 0%, #121a2e 38%, #0a0e16 72%, #070a11 100%)}
-  .glow{position:fixed;left:50%;top:-12vh;transform:translateX(-50%);width:90vw;height:60vh;z-index:-2;
-    background:radial-gradient(closest-side, rgba(200,137,61,.20), rgba(200,137,61,.05) 55%, transparent 75%);
-    filter:blur(20px);pointer-events:none}
-  .stars{position:fixed;inset:0;z-index:-2;pointer-events:none}
-  .stars i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:0;animation:tw 5s infinite ease-in-out}
-  @keyframes tw{0%,100%{opacity:.05}50%{opacity:.7}}
-  .feather{position:fixed;bottom:-40px;z-index:-1;color:var(--bronze);opacity:0;animation:rise linear infinite}
-  @keyframes rise{0%{transform:translateY(0) rotate(0deg);opacity:0}12%{opacity:.5}88%{opacity:.4}100%{transform:translateY(-115vh) rotate(220deg);opacity:0}}
+/* ── TOP BAR ───────────────────────────────── */
+.bar{
+  position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line2);
+}
+.bar-in{max-width:940px;margin:0 auto;padding:9px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.bar-logo{font-family:'Fraunces',serif;font-weight:700;color:var(--ink);font-size:17px;white-space:nowrap;margin-right:auto}
+.bar-logo span{color:var(--mid)}
+.navchips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 0;max-width:100%}
+.navchips::-webkit-scrollbar{display:none}
+.chip{
+  font-size:12.5px;font-weight:600;color:var(--blue);background:var(--pale);
+  border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap;cursor:pointer;
+}
+.chip:hover{background:var(--mid);color:#fff;border-color:var(--mid)}
 
-  .wrap{max-width:760px;margin:0 auto;padding:0 26px}
-  header{padding:9vh 0 5vh;text-align:center}
-  .dove{font-size:clamp(40px,9vw,72px);display:block;margin-bottom:22px;
-    filter:drop-shadow(0 6px 24px rgba(200,137,61,.4));animation:float 6s ease-in-out infinite, fadeUp 1.1s ease both}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-  .eyebrow{font-family:'Fraunces',serif;font-weight:400;font-style:italic;letter-spacing:.04em;color:var(--gold);
-    font-size:clamp(15px,2.4vw,19px);margin-bottom:14px;animation:fadeUp 1.1s .15s ease both}
-  h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(40px,8.5vw,82px);line-height:1.02;
-    color:#f4f0e8;letter-spacing:-.01em;animation:fadeUp 1.1s .3s ease both}
-  h1 .amp{color:var(--bronze);font-style:italic;font-weight:400}
-  .sub{margin-top:22px;color:var(--mute);font-size:clamp(16px,2.5vw,19px);max-width:46ch;margin-inline:auto;
-    font-weight:300;animation:fadeUp 1.1s .45s ease both}
-  .rule{width:64px;height:1px;background:linear-gradient(90deg,transparent,var(--bronze),transparent);
-    margin:42px auto 0;animation:fadeUp 1.1s .6s ease both}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+/* ── HERO ──────────────────────────────────── */
+.hero{
+  position:relative;overflow:hidden;color:#eaf3ff;text-align:center;
+  padding:56px 16px 48px;
+  background:
+    radial-gradient(90% 120% at 12% 0%, #1f6fc4 0%, transparent 55%),
+    radial-gradient(80% 110% at 92% 8%, #2b86d4 0%, transparent 52%),
+    linear-gradient(165deg, #0b2545 0%, #07203f 55%, #061a34 100%);
+}
+.hero::after{
+  content:'';position:absolute;inset:0;opacity:.16;pointer-events:none;
+  background-image:radial-gradient(#9fd0ff 1px, transparent 1px);background-size:26px 26px;
+  mask-image:linear-gradient(to bottom, #000, transparent 85%);
+  -webkit-mask-image:linear-gradient(to bottom, #000, transparent 85%);
+}
+.hero>*{position:relative;z-index:1}
+.hero .kicker{
+  font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:#8fc6f6;margin-bottom:14px;
+}
+.hero h1{
+  color:#fff;font-size:clamp(38px,9vw,74px);letter-spacing:-.02em;margin-bottom:10px;
+  text-shadow:0 4px 30px rgba(0,0,0,.3);
+}
+.hero h1 em{font-style:normal;color:#79bdf5}
+.hero .sub{font-size:clamp(15px,3.4vw,19px);color:#bcd9f5;font-weight:500}
+.hero .sub b{color:#fff;font-weight:600}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:22px}
+.fact{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:500;color:#dceaf9;
+}
+.countdown{
+  margin-top:26px;display:inline-flex;align-items:baseline;gap:10px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
+  border-radius:var(--radius);padding:12px 22px;
+}
+.countdown b{font-family:'Fraunces',serif;font-size:34px;color:#fff;line-height:1}
+.countdown span{font-size:13px;color:#a9cfef;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
 
-  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:46px 0 8px}
-  .name{border:1px solid var(--line);border-radius:14px;
-    background:linear-gradient(160deg, rgba(28,39,64,.55), rgba(16,24,42,.35));
-    padding:26px 12px;text-align:center;backdrop-filter:blur(6px);user-select:none;
-    transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s}
-  .name:hover{transform:translateY(-6px);border-color:rgba(200,137,61,.5);box-shadow:0 16px 40px -18px rgba(200,137,61,.5)}
-  .name.secret{cursor:pointer}
-  .name.secret:active{transform:scale(.96)}
-  .name .bird{font-size:26px;display:block;margin-bottom:10px}
-  .name b{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(17px,3.4vw,23px);color:#f4f0e8;display:block;letter-spacing:.01em}
-  .name span{font-size:12.5px;color:var(--mute);letter-spacing:.16em;text-transform:uppercase}
+/* ── SECTION SHELL ─────────────────────────── */
+.sec{padding:44px 0 8px}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.sec-head h2{font-size:clamp(25px,5.2vw,34px);letter-spacing:-.01em}
+.sec-sub{color:var(--muted);font-size:14.5px;margin-bottom:20px;max-width:64ch}
+.rule{height:3px;width:56px;background:linear-gradient(90deg,var(--mid),var(--sky));border-radius:3px;margin:0 0 18px}
 
-  .story{margin:30px 0;font-size:clamp(16.5px,2.5vw,19px);color:#c3cde2;font-weight:300}
-  .story p{margin:18px 0}
-  .story strong{color:#f4f0e8;font-weight:500}
-  .lead{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(21px,4vw,30px);
-    line-height:1.35;color:#efe9dd;text-align:center;margin:0 0 6px}
+.tools{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tbtn{
+  font-size:12.5px;font-weight:600;color:var(--blue);background:#fff;border:1px solid var(--line);
+  border-radius:8px;padding:7px 12px;cursor:pointer;font-family:inherit;
+}
+.tbtn:hover{background:var(--pale);border-color:var(--mid)}
 
-  .card{position:relative;margin:48px 0;padding:40px 32px 36px;border-radius:22px;
-    background:linear-gradient(165deg, rgba(28,39,64,.75), rgba(12,17,28,.75));border:1px solid var(--line);
-    box-shadow:0 30px 80px -40px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.04);overflow:hidden}
-  .card::before{content:"";position:absolute;inset:0;
-    background:radial-gradient(80% 120% at 100% 0%, rgba(200,137,61,.14), transparent 60%);pointer-events:none}
-  .card h2{font-family:'Fraunces',serif;font-weight:400;text-align:center;font-size:clamp(22px,4vw,30px);color:#f4f0e8;margin-bottom:6px}
-  .card .cap{text-align:center;color:var(--mute);font-size:14.5px;margin-bottom:30px;letter-spacing:.02em}
-  .amounts{display:flex;align-items:flex-end;justify-content:center;gap:10px;margin-bottom:6px}
-  .raised{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(46px,11vw,76px);line-height:.9;color:#fff;letter-spacing:-.02em}
-  .raised .cur{color:var(--gold);font-size:.55em;vertical-align:.18em;font-weight:400}
-  .goal{color:var(--mute);font-size:clamp(15px,2.6vw,18px);padding-bottom:10px}
-  .bar{height:14px;border-radius:99px;margin:22px 0 14px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.06)}
-  .fill{height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--bronze-lo),var(--bronze),var(--gold));
-    box-shadow:0 0 22px rgba(200,137,61,.6);transition:width 1.9s cubic-bezier(.2,.8,.2,1)}
-  .stats{display:flex;justify-content:space-between;color:var(--mute);font-size:13.5px;letter-spacing:.04em}
-  .stats b{color:var(--gold);font-weight:500}
-  .cta{display:block;text-align:center;text-decoration:none;margin:30px auto 0;padding:18px 28px;border-radius:14px;
-    font-family:'Fraunces',serif;font-size:19px;font-weight:500;letter-spacing:.01em;color:#1a120a;
-    background:linear-gradient(135deg,var(--gold),var(--bronze));box-shadow:0 14px 34px -12px rgba(200,137,61,.7);
-    transition:transform .25s, box-shadow .25s, filter .25s;position:relative;overflow:hidden}
-  .cta:hover{transform:translateY(-3px);box-shadow:0 22px 46px -14px rgba(200,137,61,.85);filter:brightness(1.05)}
-  .cta:active{transform:translateY(-1px)}
-  .cta .sh{position:absolute;top:0;left:-60%;width:40%;height:100%;
-    background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg);animation:shimmer 4.5s infinite}
-  @keyframes shimmer{0%,72%{left:-60%}100%{left:130%}}
-  .note{text-align:center;color:var(--mute);font-size:12.8px;margin-top:14px;letter-spacing:.03em}
+/* ── ACCORDION ─────────────────────────────── */
+details.acc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden;
+  transition:box-shadow .2s, border-color .2s;
+}
+details.acc[open]{box-shadow:var(--shadow-lg);border-color:var(--mid)}
+details.acc>summary{
+  list-style:none;cursor:pointer;padding:15px 46px 15px 16px;position:relative;
+  display:flex;align-items:center;gap:11px;flex-wrap:wrap;
+  background:linear-gradient(180deg,#fff,var(--pale2));
+}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary:hover{background:var(--pale)}
+details.acc[open]>summary{background:var(--pale);border-bottom:1px solid var(--line2)}
+summary .st{font-family:'Fraunces',serif;font-weight:700;color:var(--ink);font-size:17px;line-height:1.25}
+summary .ss{font-size:13px;color:var(--muted);font-weight:500;width:100%;margin-top:-2px}
+summary::after{
+  content:'';position:absolute;right:17px;top:50%;width:9px;height:9px;
+  border-right:2.4px solid var(--mid);border-bottom:2.4px solid var(--mid);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s;
+}
+details.acc[open]>summary::after{transform:translateY(-20%) rotate(-135deg)}
+.acc-body{padding:18px 16px 20px;animation:pop .22s ease}
+@keyframes pop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.acc-body>*+*{margin-top:12px}
+.acc-body h4{font-size:16px;margin-top:20px;color:var(--blue)}
+.acc-body p{font-size:15.2px}
 
-  footer{text-align:center;padding:24px 0 70px}
-  .memorial{font-family:'Fraunces',serif;font-style:italic;font-weight:300;color:var(--gold);font-size:clamp(16px,3vw,21px)}
-  .footrule{width:48px;height:1px;background:var(--line);margin:0 auto 26px}
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease, transform .9s ease}
-  .reveal.in{opacity:1;transform:none}
+/* day tag pills on summaries */
+.tag{
+  font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 9px;border-radius:999px;white-space:nowrap;
+}
+.t-tokyo{background:var(--pale);color:var(--blue);border:1px solid var(--line)}
+.t-kyoto{background:#eae7f8;color:#4a3b8f;border:1px solid #d6d0ef}
+.t-seoul{background:#e2f4f6;color:#0d5f6b;border:1px solid #c6e8ec}
+.t-move{background:#fff1e3;color:#a2520f;border:1px solid #f6ddc3}
+.t-disney{background:#fde9f3;color:#a02166;border:1px solid #f8d2e6}
 
-  /* ---------- secret door / admin ---------- */
-  .overlay{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;
-    background:rgba(4,7,12,.78);backdrop-filter:blur(8px);padding:24px;opacity:0;transition:opacity .4s}
-  .overlay.show{display:flex;opacity:1}
-  .door{width:100%;max-width:380px;border-radius:22px;padding:36px 30px;text-align:center;
-    background:linear-gradient(165deg, rgba(28,39,64,.96), rgba(12,17,28,.96));border:1px solid var(--line);
-    box-shadow:0 40px 90px -30px rgba(0,0,0,.9);transform:translateY(18px) scale(.96);transition:transform .45s cubic-bezier(.2,.9,.2,1)}
-  .overlay.show .door{transform:none}
-  .door .lock{font-size:40px;display:block;margin-bottom:14px}
-  .door h3{font-family:'Fraunces',serif;font-weight:400;font-size:24px;color:#f4f0e8;margin-bottom:6px}
-  .door p{color:var(--mute);font-size:14px;margin-bottom:22px}
-  .door input{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);
-    background:rgba(0,0,0,.3);color:#f4f0e8;font-family:'Spectral',serif;font-size:17px;text-align:center;letter-spacing:.06em}
-  .door input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(230,179,103,.18)}
-  .door .row{display:flex;gap:10px;margin-top:16px}
-  .btn{flex:1;padding:13px;border-radius:12px;border:none;cursor:pointer;font-family:'Fraunces',serif;font-size:16px;font-weight:500;transition:transform .2s,filter .2s}
-  .btn:active{transform:translateY(1px)}
-  .btn-go{color:#1a120a;background:linear-gradient(135deg,var(--gold),var(--bronze))}
-  .btn-go:hover{filter:brightness(1.06)}
-  .btn-x{color:var(--mist);background:rgba(255,255,255,.07)}
-  .err{color:#e07b5a;font-size:13px;margin-top:12px;min-height:16px;letter-spacing:.02em}
-  .shake{animation:shake .4s}
-  @keyframes shake{0%,100%{transform:none}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+/* ── CONTENT BITS ──────────────────────────── */
+ul.bul{list-style:none;padding:0}
+ul.bul li{position:relative;padding-left:22px;margin-bottom:9px;font-size:15.2px}
+ul.bul li::before{
+  content:'';position:absolute;left:4px;top:.62em;width:7px;height:7px;border-radius:50%;
+  background:var(--sky);
+}
+ul.bul li .why{color:var(--muted);font-style:italic}
+ol.num{padding-left:20px}
+ol.num li{margin-bottom:9px;font-size:15.2px}
 
-  /* admin badge + editor */
-  .adminbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;
-    background:linear-gradient(0deg, rgba(10,14,22,.98), rgba(16,24,42,.94));
-    border-top:1px solid var(--line);padding:14px 18px calc(14px + env(safe-area-inset-bottom));
-    box-shadow:0 -20px 50px -30px rgba(0,0,0,.9)}
-  .adminbar.show{display:block;animation:slideUp .45s cubic-bezier(.2,.9,.2,1)}
-  @keyframes slideUp{from{transform:translateY(100%)}to{transform:none}}
-  .adminInner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
-  .adminInner label{color:var(--gold);font-family:'Fraunces',serif;font-size:15px;display:flex;align-items:center;gap:7px}
-  .adminInner input{width:130px;padding:11px 14px;border-radius:10px;border:1px solid var(--line);
-    background:rgba(0,0,0,.35);color:#fff;font-family:'Spectral',serif;font-size:17px;text-align:center}
-  .adminInner input:focus{outline:none;border-color:var(--gold)}
-  .adminInner .btn{flex:0 0 auto;padding:11px 20px}
-  .adminInner .lockoff{background:rgba(255,255,255,.07);color:var(--mute);padding:11px 16px}
-  .saved{color:#7ec98f;font-size:13px;opacity:0;transition:opacity .3s}
-  .saved.show{opacity:1}
+.note{border-left:4px solid var(--mid);background:var(--pale2);padding:12px 14px;border-radius:0 10px 10px 0;font-size:14.6px}
+.warn{border-left:4px solid #e2872f;background:var(--warnbg);padding:12px 14px;border-radius:0 10px 10px 0;font-size:14.6px;color:#6b3a10}
+.warn strong{color:#8a4512}
+.ok{border-left:4px solid #2f9e78;background:var(--goodbg);padding:12px 14px;border-radius:0 10px 10px 0;font-size:14.6px;color:#14503d}
+.ok strong{color:var(--good)}
+.alarm{
+  border:2px solid #d94f2b;background:linear-gradient(180deg,#fff6f3,#fff);
+  border-radius:12px;padding:14px 15px;font-size:15px;color:#7b2d15;
+}
+.alarm strong{color:#b8391a}
+.new{background:#dff0ff;color:#0f4f8c;font-size:11px;font-weight:800;padding:2px 7px;border-radius:5px;letter-spacing:.05em;vertical-align:2px}
 
-  @media(max-width:480px){.three{gap:9px}.name{padding:20px 6px}.card{padding:32px 20px 30px}}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:14.4px;min-width:420px;background:#fff}
+th{
+  background:var(--ink);color:#dbeaf9;text-align:left;padding:10px 12px;font-weight:600;
+  font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;
+}
+td{padding:10px 12px;border-top:1px solid var(--line2);vertical-align:top}
+tbody tr:nth-child(even){background:var(--pale2)}
+td.num,th.num{text-align:right;white-space:nowrap}
+
+/* timeline */
+.tl{position:relative;padding-left:0;margin-top:6px}
+.tl-row{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line2)}
+.tl-row:first-child{border-top:none}
+.tl-t{font-weight:700;color:var(--mid);font-size:14px;font-variant-numeric:tabular-nums}
+.tl-d{font-size:15px}
+
+/* stop block inside a day */
+.stop{border-top:1px solid var(--line2);padding-top:16px;margin-top:16px}
+.stop:first-of-type{border-top:none;padding-top:0;margin-top:0}
+.stop h4{margin-top:0;font-size:17px;color:var(--ink);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.stop h4 .time{
+  font-family:'Inter',sans-serif;font-size:13px;font-weight:800;color:#fff;background:var(--mid);
+  padding:3px 9px;border-radius:6px;letter-spacing:.02em;
+}
+.travel{font-size:13.6px;color:var(--muted);background:var(--pale2);border-radius:8px;padding:7px 11px;margin:8px 0}
+
+.cost{
+  display:inline-block;background:var(--ink);color:#bfe0ff;font-weight:700;font-size:13px;
+  padding:4px 10px;border-radius:7px;
+}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14.6px}
+.kv dt{font-weight:600;color:var(--ink);white-space:nowrap}
+
+/* overview cards */
+.sevens{counter-reset:pt;display:grid;gap:10px}
+.seven{
+  display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;box-shadow:var(--shadow);
+}
+.seven .n{
+  width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(145deg,var(--blue),var(--sky));color:#fff;
+  font-family:'Fraunces',serif;font-weight:700;font-size:20px;
+}
+.seven h3{font-size:17px;margin-bottom:3px}
+.seven .when{font-size:12.5px;font-weight:700;color:var(--mid);letter-spacing:.04em;text-transform:uppercase;margin-bottom:5px}
+.seven p{font-size:14.8px}
+
+footer{
+  margin-top:56px;background:var(--ink);color:#9fc2e3;padding:34px 16px 40px;text-align:center;font-size:13.6px;
+}
+footer b{color:#fff}
+footer .fwrap{max-width:940px;margin:0 auto}
+
+@media(max-width:560px){
+  .tl-row{grid-template-columns:64px 1fr;gap:9px}
+  .bar-logo{font-size:15px}
+  .seven{grid-template-columns:38px 1fr;gap:11px}
+  .seven .n{width:38px;height:38px;font-size:17px}
+  details.acc>summary{padding:13px 40px 13px 13px}
+  .acc-body{padding:15px 13px 17px}
+}
+@media print{
+  .bar,.tools,.countdown{display:none}
+  details.acc{break-inside:avoid;box-shadow:none}
+  details.acc>summary::after{display:none}
+}
 </style>
 </head>
 <body>
-  <div class="sky"></div><div class="glow"></div><div class="stars" id="stars"></div>
 
-  <div class="wrap">
-    <header>
-      <span class="dove">🕊️</span>
-      <p class="eyebrow">Three tiny lives, gone in one night</p>
-      <h1>Artemis,<br>Elizabeth <span class="amp">&</span> Nugget</h1>
-      <p class="sub">They weren’t just quails. They were our pets, our daily routine, and part of our family.</p>
-      <div class="rule"></div>
-    </header>
+<div class="bar">
+  <div class="bar-in">
+    <div class="bar-logo">🗾 Asia <span>2026</span></div>
+    <nav class="navchips">
+      <button class="chip" data-go="overview">Overview</button>
+      <button class="chip" data-go="locked">Locked in</button>
+      <button class="chip" data-go="book">To book</button>
+      <button class="chip" data-go="itinerary">Itinerary</button>
+      <button class="chip" data-go="disney">Disney</button>
+      <button class="chip" data-go="food">Food</button>
+      <button class="chip" data-go="extras">Extras</button>
+    </nav>
+  </div>
+</div>
 
-    <div class="three reveal">
-      <div class="name"><span class="bird">🐦</span><b>Artemis</b><span>Beloved</span></div>
-      <div class="name"><span class="bird">🐦</span><b>Elizabeth</b><span>Beloved</span></div>
-      <div class="name secret" id="secretTile" title=""><span class="bird">🐤</span><b>Nugget</b><span>Beloved</span></div>
-    </div>
+<header class="hero">
+  <div class="kicker">Ross Family · 16–31 October 2026</div>
+  <h1>Japan &amp; <em>South Korea</em></h1>
+  <p class="sub">The full plan — built on one rule: <b>minimise travel</b>. Every day is a single geographic cluster. Nothing doubles back.</p>
+  <div class="facts">
+    <div class="fact">👨‍👩‍👧‍👦 2 adults + 15 · 13 · 10</div>
+    <div class="fact">🛏️ 16 nights · 4 hotels</div>
+    <div class="fact">🏙️ Tokyo · Kyoto · Tokyo Bay · Seoul</div>
+    <div class="fact">🐟 Fish ✅ · no shellfish ❌ · no non-kosher meat ❌</div>
+  </div>
+  <div class="countdown" id="cd"><b id="cdn">—</b><span id="cdl">days to go</span></div>
+</header>
 
-    <div class="story reveal">
-      <p class="lead">One night, a fox broke into their enclosure and took all three.</p>
-      <p>We tried our best to keep them safe — but it wasn’t enough. The loss of Artemis, Elizabeth and Nugget hit us harder than we ever expected. They were small, but they were ours.</p>
-      <p>Now we’re trying to do right by them. We want to build a <strong>proper, fox-proof enclosure</strong> and start again — to give a new little flock the safe home our three never got. Every contribution, however small, brings that closer.</p>
-      <p>If you can spare anything at all, we’d be incredibly grateful. 🤍</p>
-    </div>
+<main class="wrap">
 
-    <section class="card reveal">
-      <h2>Help us rebuild</h2>
-      <p class="cap">Raising funds for a fox-proof enclosure & a fresh start</p>
-      <div class="amounts">
-        <span class="raised"><span class="cur">£</span><span id="raisedNum">0</span></span>
-        <span class="goal">raised of £<span id="goalNum">750</span></span>
-      </div>
-      <div class="bar"><div class="fill" id="fill"></div></div>
-      <div class="stats"><span><b id="pct">0%</b> of goal</span><span>£<b id="left">750</b> to go</span></div>
-      <a class="cta" href="https://revolut.me/ethanhuil" target="_blank" rel="noopener"><span class="sh"></span>Donate via Revolut</a>
-      <p class="note">Secure payment through Revolut</p>
-    </section>
+<!-- ═══════════ OVERVIEW ═══════════ -->
+<section class="sec" id="overview">
+  <div class="sec-head"><h2>🧭 The overview</h2></div>
+  <div class="rule"></div>
+  <p class="sec-sub">The whole trip in seven points. Under it, every day as a short bullet list — with each thing explained in brackets.</p>
 
-    <footer class="reveal">
-      <div class="footrule"></div>
-      <p class="memorial">🕊️ In memory of Artemis, Elizabeth &amp; Nugget</p>
-    </footer>
+  <div class="sevens">
+    <div class="seven"><div class="n">1</div><div>
+      <div class="when">Fri 16 – Sat 17 Oct · Getting there</div>
+      <h3>✈️ Two flights, one write-off day</h3>
+      <p>London → Seoul overnight, then Seoul → Tokyo the next afternoon <span class="why">(Korean Air via Incheon — the connection is the whole of Saturday, so nothing is planned. One direct train from Narita to the hotel door.)</span></p>
+    </div></div>
+
+    <div class="seven"><div class="n">2</div><div>
+      <div class="when">Sun 18 – Wed 21 Oct · Tokyo</div>
+      <h3>🏮 Four clustered days in Tokyo</h3>
+      <p>North-east loop, west line, bay line, central ring — one compass direction per day <span class="why">(temples and markets, then Harajuku/Shibuya/Shinjuku, then the fish markets and teamLab, then the Imperial Palace and Akihabara. Nothing doubles back; 25–55 minutes of trains a day.)</span></p>
+    </div></div>
+
+    <div class="seven"><div class="n">3</div><div>
+      <div class="when">Thu 22 – Sat 24 Oct · Kyoto</div>
+      <h3>🎎 Kyoto, arriving into the festival</h3>
+      <p>Bullet train down, straight into Jidai Matsuri, then temples west-to-east and Fushimi Inari at dawn <span class="why">(Jidai Matsuri = the Festival of the Ages, 2,000 people in period costume walking the city backwards through 1,100 years of history. It only happens on 22 October.)</span></p>
+    </div></div>
+
+    <div class="seven"><div class="n">4</div><div>
+      <div class="when">Sat 24 Oct · Tokyo Bay</div>
+      <h3>🏊 Transfer day and the swim</h3>
+      <p>Back to Tokyo by lunchtime, check into the Sheraton, then three hours in the pool <span class="why">(a free heated 25m indoor pool for hotel guests — the only realistic swim of the trip, deliberately placed after eight days on your feet and before two Disney days.)</span></p>
+    </div></div>
+
+    <div class="seven"><div class="n">5</div><div>
+      <div class="when">Sun 25 – Mon 26 Oct · Disney</div>
+      <h3>🏰 Disneyland, then DisneySea</h3>
+      <p>Two full park days, both already paid, both inside the Halloween costume window <span class="why">(DisneySea is unique to Tokyo and widely rated the best Disney park on earth. Free line-skipping ended in August 2026, so budget for paid Premier Access.)</span></p>
+    </div></div>
+
+    <div class="seven"><div class="n">6</div><div>
+      <div class="when">Tue 27 – Fri 30 Oct · Seoul</div>
+      <h3>🇰🇷 Old Seoul, then modern Seoul</h3>
+      <p>Coach to Narita and fly to Incheon, then palaces and markets one day, design districts and skyscrapers the next two <span class="why">(Gyeongbokgung is the main Joseon-dynasty royal palace; Seoul Sky is the observatory in the world's fifth-tallest building, with a glass floor at 478m.)</span></p>
+    </div></div>
+
+    <div class="seven"><div class="n">7</div><div>
+      <div class="when">Sat 31 Oct · Home</div>
+      <h3>🎃 Land back on Halloween</h3>
+      <p>05:15 alarm, express train to Incheon, home at 16:30 <span class="why">(Korean Air fly out of Incheon Terminal 2 — the reverse of Narita, where they use Terminal 1. Back in time for trick-or-treaters.)</span></p>
+    </div></div>
   </div>
 
-  <!-- secret door -->
-  <div class="overlay" id="overlay">
-    <div class="door" id="door">
-      <span class="lock">🔐</span>
-      <h3>Who goes there?</h3>
-      <p>You found the secret door. Enter the password to update the total.</p>
-      <input type="password" id="pw" placeholder="••••••" autocomplete="off" autocapitalize="off" spellcheck="false">
-      <div class="row">
-        <button class="btn btn-x" id="cancelBtn">Cancel</button>
-        <button class="btn btn-go" id="enterBtn">Enter</button>
-      </div>
-      <div class="err" id="err"></div>
-    </div>
+  <h3 style="margin:32px 0 6px;font-size:22px">📋 Day by day, in brief</h3>
+  <p class="sec-sub">Tap any day to open it. Every entry has what it is in brackets.</p>
+  <div class="tools">
+    <button class="tbtn" data-open="ov">Open all days</button>
+    <button class="tbtn" data-close="ov">Close all</button>
   </div>
 
-  <!-- admin editor -->
-  <div class="adminbar" id="adminbar">
-    <div class="adminInner">
-      <label>⚙️ Total raised £ <input type="number" id="editAmt" min="0" step="1"></label>
-      <button class="btn btn-go" id="saveBtn">Save</button>
-      <span class="saved" id="savedMsg">✓ Saved</span>
-      <button class="btn lockoff" id="lockBtn">Lock</button>
-    </div>
+  <div data-grp="ov">
+
+  <details class="acc"><summary><span class="tag t-move">Fri 16</span><span class="st">Departure</span><span class="ss">LHR → Incheon · overnight</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>19:35 — KE908 to Seoul</strong> <span class="why">(Korean Air, ~11 hours, overnight. Booking ref EFQDVD.)</span></li>
+    <li><strong>Hand luggage</strong> <span class="why">(passports, Visit Japan Web QR screenshots, chargers, snacks that clear customs — no fresh fruit or meat into Japan.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-move">Sat 17</span><span class="st">Arrival</span><span class="ss">Incheon → Narita → Nihonbashi · write this day off</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>16:15 land Seoul, 17:15 fly on to Tokyo</strong> <span class="why">(a connection, not a stopover — you never leave the airport.)</span></li>
+    <li><strong>19:45 — Narita Terminal 1</strong> <span class="why">(Japan's main international airport, ~60km east of central Tokyo.)</span></li>
+    <li><strong>~21:00 — Keisei Sky Access Express</strong> <span class="why">(one direct train, no changes, 65 minutes to Nihombashi Station — it joins the subway line your hotel sits on.)</span></li>
+    <li><strong>~22:15 — Hotel Monte Hermana</strong> <span class="why">(your Tokyo base for five nights, in Nihonbashi — the old merchant heart of the city.)</span></li>
+    <li><strong>Konbini haul, then bed</strong> <span class="why">(convenience store — onigiri rice balls, egg sandwiches, drinks. Genuinely good food in Japan.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-tokyo">Sun 18</span><span class="st">The north-east loop</span><span class="ss">Asakusa · Kappabashi · Skytree · Ueno — ~40 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Senso-ji Temple</strong> <span class="why">(Tokyo's oldest temple, founded 645 AD — a giant red lantern gate, a 250m market street leading to it, and the most visited religious site in the world.)</span></li>
+    <li><strong>Kappabashi Kitchen Street</strong> <span class="why">(800m of restaurant-supply shops — handmade knives, ceramics, and the shops selling the astonishingly realistic plastic food samples you see in Japanese restaurant windows.)</span></li>
+    <li><strong>Tokyo Skytree</strong> <span class="why">(at 634m, the tallest tower in the world — two observation decks and a 300-shop mall at the base.)</span></li>
+    <li><strong>Ameyoko Market, Ueno</strong> <span class="why">(a 500m open-air market under the elevated railway — a genuine post-war black-market street that never went away. Dried fish, fruit, street food, stallholders shouting.)</span></li>
+    <li><strong>Dinner at Coredo Muromachi</strong> <span class="why">(three food-and-craft buildings five minutes from the hotel, with an English-friendly basement food hall.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-tokyo">Mon 19</span><span class="st">The west line</span><span class="ss">Meiji Jingu · Harajuku · Shibuya · Shinjuku — ~55 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Meiji Jingu Shrine</strong> <span class="why">(Tokyo's greatest shrine — 175 acres of forest, 100,000 trees all planted by hand in 1920, dedicated to Emperor Meiji.)</span></li>
+    <li><strong>Takeshita-dori, Harajuku</strong> <span class="why">(350m of teen fashion, crepe stands, rainbow candyfloss and photo booths — the 13-year-old's favourite 90 minutes of the trip.)</span></li>
+    <li><strong>Omotesando</strong> <span class="why">(Tokyo's Champs-Élysées — a tree-lined boulevard with some of the best contemporary architecture in the city.)</span></li>
+    <li><strong>Shibuya Crossing &amp; Hachiko</strong> <span class="why">(the world's busiest pedestrian crossing, up to 3,000 people per light; Hachiko is the statue of the dog who waited nine years at the station for an owner who had died.)</span></li>
+    <li><strong>Shibuya Parco, 6th floor</strong> <span class="why">(four flagship game stores in one place — Nintendo Tokyo, Pokémon Center, Capcom and Jump Shop.)</span></li>
+    <li><strong>Shibuya Sky, 16:30</strong> <span class="why">(an open-air rooftop at 229m with no glass between you and the city — timed so you get daylight, sunset and the lit-up city in one ticket. ⏰ Must be booked exactly 14 days ahead.)</span></li>
+    <li><strong>Shinjuku after dark</strong> <span class="why">(the neon — Omoide Yokocho is a lane of tiny post-war yakitori bars under the railway; Golden Gai is 200+ matchbox bars in six alleys.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-tokyo">Tue 20</span><span class="st">The bay line</span><span class="ss">Tsukiji · teamLab · Toyosu · Odaiba — ~50 min, one direction</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Tsukiji Outer Market, 08:30</strong> <span class="why">(460+ food stalls and shops — the retail market that stayed behind when the wholesale market moved out in 2018. Tamagoyaki, tuna skewers, strawberry daifuku.)</span></li>
+    <li><strong>teamLab Planets, 11:00 ✅ booked</strong> <span class="why">(a barefoot digital art museum — you wade through knee-deep water under projected koi that scatter when you touch them, plus mirrored infinity rooms and a hall of floating orchids.)</span></li>
+    <li><strong>Toyosu Market</strong> <span class="why">(the working wholesale fish market that took over from Tsukiji — you walk glass corridors above the real trading floor.)</span></li>
+    <li><strong>Senkyaku Banrai</strong> <span class="why">(a reconstructed Edo-period food street next door, opened 2024 — 30 shops under wooden eaves, plus a free rooftop foot bath with bay views.)</span></li>
+    <li><strong>Odaiba</strong> <span class="why">(a man-made island in Tokyo Bay — a replica Statue of Liberty with Rainbow Bridge behind it, and Joypolis, Sega's indoor theme park.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-tokyo">Wed 21</span><span class="st">The central ring</span><span class="ss">Imperial Palace · Akihabara · Kanda Myojin · Ginza — ~25 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Imperial Palace East Gardens</strong> <span class="why">(the grounds of Edo Castle — the shogun's stronghold. You can climb the stone base of the keep, all that survived the great fire of 1657. Free.)</span></li>
+    <li><strong>Akihabara</strong> <span class="why">("Electric Town" — seven-storey buildings that are entirely anime, manga, arcades and electronics.)</span></li>
+    <li><strong>Kanda Myojin Shrine</strong> <span class="why">(founded 730 AD and now the guardian shrine of Akihabara — people bring laptops to be blessed and it sells IT-protection amulets for your data.)</span></li>
+    <li><strong>Akihabara after dark</strong> <span class="why">(the neon signage only switches on around 17:00 — that's what gives the district its film-set look.)</span></li>
+    <li><strong>Ginza (optional)</strong> <span class="why">(Tokyo's luxury shopping district — Ginza Six, the Uniqlo flagship, the Wako clock tower.)</span></li>
+    <li><strong>Evening: pack &amp; forward the luggage</strong> <span class="why">(takkyubin — Japan's next-day case courier. Send the big bags straight to the Sheraton for Saturday, ~£10–12 a case.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-kyoto">Thu 22</span><span class="st">Tokyo → Kyoto · Festival of the Ages</span><span class="ss">Shinkansen · Sanjusangen-do · Jidai Matsuri · Nishiki</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>09:00 Nozomi 135 bullet train ✅ booked</strong> <span class="why">(Tokyo → Kyoto in 2h15m at up to 285km/h. Sit on the right, seats D and E — Mount Fuji appears about 40 minutes in.)</span></li>
+    <li><strong>Sanjusangen-do</strong> <span class="why">(a 120m wooden hall from 1164 containing 1,001 life-size gilded statues of the thousand-armed Kannon, standing ten rows deep. Every face is different. It's a 7-minute walk from your hotel.)</span></li>
+    <li><strong>Jidai Matsuri, 13:35</strong> <span class="why">(the Festival of the Ages — 2,000 people in researched period costume walking in reverse chronological order, from 1868 back to the 780s. Held every 22 October since 1895.)</span></li>
+    <li><strong>Nishiki Market</strong> <span class="why">("Kyoto's Kitchen" — a covered arcade five blocks long and four metres wide, running 400 years. 130+ stalls.)</span></li>
+    <li><strong>Kamo River &amp; Pontocho</strong> <span class="why">(a narrow lantern-lit dining alley between the river and the town — dinner here.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-kyoto">Fri 23</span><span class="st">Kyoto, west to east</span><span class="ss">Arashiyama · Nijo Castle · Kiyomizu-dera · Gion — ~35 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Arashiyama Bamboo Grove</strong> <span class="why">(a 500m path through towering bamboo on the western edge of the city — better than the photos, mostly because of the sound.)</span></li>
+    <li><strong>Tenryu-ji Temple</strong> <span class="why">(UNESCO site from the 14th century, whose Sogenchi garden is the oldest in Japan surviving in its original form.)</span></li>
+    <li><strong>Iwatayama Monkey Park</strong> <span class="why">(a 20-minute uphill walk to a summit where ~120 wild Japanese macaques roam free — you go inside a hut and feed them through the mesh while they stay outside.)</span></li>
+    <li><strong>Nijo Castle</strong> <span class="why">(the shogun's Kyoto castle, built 1603, UNESCO — famous for "nightingale floors" deliberately built to chirp when walked on, as an anti-assassination device. The last shogun handed power back to the Emperor in one of these rooms in 1867.)</span></li>
+    <li><strong>Kiyomizu-dera</strong> <span class="why">(a temple with a huge wooden stage jutting out over the hillside, built in 1633 without a single nail.)</span></li>
+    <li><strong>Downhill through old Kyoto</strong> <span class="why">(Sannenzaka and Ninenzaka are preserved stone-stepped lanes; Yasaka Pagoda is the five-storey pagoda framed at the end of them; Gion is the geisha district. All on foot, lanterns coming on.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-move">Sat 24</span><span class="st">Fushimi Inari → Tokyo Bay → pool</span><span class="ss">Dawn shrine, bullet train back, swim</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Fushimi Inari Taisha, 07:20</strong> <span class="why">(thousands of vermilion torii gates forming tunnels up a mountain. Open 24 hours, free — and nearly empty at this hour, shoulder-to-shoulder by 10:00.)</span></li>
+    <li><strong>10:30 Nozomi back to Tokyo</strong> <span class="why">(book this one — no need to pay the Mt Fuji seat fee travelling east.)</span></li>
+    <li><strong>Sheraton Grande Tokyo Bay</strong> <span class="why">(an official Disney hotel two minutes from the monorail — which is what makes the 06:15 park starts possible.)</span></li>
+    <li><strong>The pool, 15:30–17:30</strong> <span class="why">(free heated indoor 25m pool, five lanes, plus jacuzzi and children's pool. Towels provided.)</span></li>
+    <li><strong>20:30 Disney briefing</strong> <span class="why">(read the Disney section out loud together and assign roles — one person buys passes, one grabs the free ones.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-disney">Sun 25</span><span class="st">Tokyo Disneyland</span><span class="ss">Already paid · res. A00616088683</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>05:00 up, 06:15 at the gates</strong> <span class="why">(rope drop — the first hour of the day is worth more than any pass you can buy.)</span></li>
+    <li><strong>Premier Access, in order</strong> <span class="why">(DPA is the paid line-skip that replaced the free system in August 2026 — buy Beauty and the Beast first, then Baymax, then Pooh's Hunny Hunt.)</span></li>
+    <li><strong>Haunted Mansion "Holiday Nightmare"</strong> <span class="why">(the ride re-themed to The Nightmare Before Christmas for the season — ride it early, no pass needed.)</span></li>
+    <li><strong>The Villains' Halloween parade</strong> <span class="why">(a 45-minute parade, once daily. Sit on the ground 45 minutes early and it's free — the paid seat is ~£17 each.)</span></li>
+    <li><strong>Night High Halloween</strong> <span class="why">(the nightly Halloween fireworks over Cinderella Castle.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-disney">Mon 26</span><span class="st">Tokyo DisneySea</span><span class="ss">Already paid · res. A00616088973 · the better park</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Fantasy Springs</strong> <span class="why">(the Frozen / Tangled / Peter Pan land opened in 2024 — your ticket covers it, but standby queues hit 2–3 hours.)</span></li>
+    <li><strong>Buy DPA at 08:00 in this order</strong> <span class="why">(Frozen Journey sells out first, often before 09:00; then Rapunzel's Lantern Festival; then Peter Pan last because it lasts longest.)</span></li>
+    <li><strong>Journey to the Center of the Earth</strong> <span class="why">(a ride inside Mount Prometheus, the volcano at the centre of the park.)</span></li>
+    <li><strong>Lazos de la Familia</strong> <span class="why">(the Coco celebration, 16 Sept – 2 Nov — Miguel greets guests in two different looks, morning and afternoon. Much quieter than the headliners.)</span></li>
+    <li><strong>Mediterranean Harbor at dusk</strong> <span class="why">(a full-scale Italian port built inside the park — worth an hour of doing nothing.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-move">Tue 27</span><span class="st">Tokyo → Seoul</span><span class="ss">Coach to Narita · KE704 · AREX into the city</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>09:08 Limousine Bus</strong> <span class="why">(a coach that picks up at the Sheraton's own front entrance and runs direct to Narita — no walking with cases.)</span></li>
+    <li><strong>14:00 KE704 to Incheon</strong> <span class="why">(2h40 flight. Check-in is Terminal 1, North Wing, 4th floor.)</span></li>
+    <li><strong>AREX Express train</strong> <span class="why">(the orange non-stop airport express — 51 minutes to Seoul Station with reserved seats and luggage racks. Worth the extra £4 over the commuter one.)</span></li>
+    <li><strong>ENA Suite Hotel Namdaemun</strong> <span class="why">(your Seoul base for four nights, next to Korea's oldest market district.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-seoul">Wed 28</span><span class="st">Old Seoul, on foot</span><span class="ss">Gyeongbokgung · Bukchon · Insadong · Gwangjang — ~35 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Gyeongbokgung Palace — free today</strong> <span class="why">(the main royal palace of the Joseon dynasty, founded 1395. Last Wednesday of the month is Korea's Culture Day, so admission is free.)</span></li>
+    <li><strong>Changing of the Royal Guard</strong> <span class="why">(a ceremony at the main gate with drums, banners and full regalia — usually 10:00 and 14:00.)</span></li>
+    <li><strong>Hanbok rental</strong> <span class="why">(traditional Korean dress, hired from shops along the palace wall — anyone wearing it gets into the palaces free, and Korean visitors do it too.)</span></li>
+    <li><strong>Bukchon Hanok Village</strong> <span class="why">(600 years old, ~900 traditional wooden courtyard houses on a hillside between two palaces. People genuinely live here — stay quiet.)</span></li>
+    <li><strong>Insadong + temple food lunch</strong> <span class="why">(the traditional craft street; and Buddhist temple cuisine, which is entirely plant-based with no shellfish and no shrimp in the kimchi — the cleanest solution to your food rules in Korea.)</span></li>
+    <li><strong>Gwangjang Market</strong> <span class="why">(founded 1905, one of Seoul's oldest — famous for mayak gimbap, tiny "addictive" seaweed rice rolls that are vegetable-only.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-seoul">Thu 29</span><span class="st">Modern Seoul, centre → west</span><span class="ss">Ikseon-dong · Euljiro · DDP · Hongdae — ~46 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Ikseon-dong</strong> <span class="why">(a 100-year-old neighbourhood of metre-wide alleys where the traditional courtyard houses are now cafés and concept stores — nothing was knocked down.)</span></li>
+    <li><strong>Euljiro, "Hipjiro"</strong> <span class="why">(the old printing and lighting-supply district — tool shops at street level, unmarked cafés and bars upstairs that deliberately kept the industrial shell.)</span></li>
+    <li><strong>Dongdaemun Design Plaza</strong> <span class="why">(Zaha Hadid's silver spaceship — 45,000 curved aluminium panels and not one straight line. Free to walk around.)</span></li>
+    <li><strong>Hongdae</strong> <span class="why">(the university district and youth-culture centre — streetwear, K-pop merch, arcades and claw-machine halls.)</span></li>
+    <li><strong>Hongdae busking, from 17:30</strong> <span class="why">(the main street fills with K-pop dance crews, singers and bands, with crowds forming circles around them. Free, and the teenagers' favourite hour in Korea.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-seoul">Fri 30</span><span class="st">Modern Seoul, east → south</span><span class="ss">Seongsu · COEX · Seoul Sky · Banpo — ~80 min travel</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Seongsu-dong</strong> <span class="why">("the Brooklyn of Seoul" — a former shoe-manufacturing district where the red-brick factories are now flagship stores, roasteries and enormous concept cafés.)</span></li>
+    <li><strong>Starfield Library, COEX</strong> <span class="why">(13-metre bookshelves holding ~85,000 books in an atrium in the middle of Asia's largest underground mall. Free.)</span></li>
+    <li><strong>SMTOWN COEX Artium</strong> <span class="why">(the K-pop building — merch, artist exhibits and a museum floor, run by one of the big agencies.)</span></li>
+    <li><strong>Seoul Sky, 16:45</strong> <span class="why">(the observatory on floors 117–123 of the Lotte World Tower — 555m, world's fifth-tallest building, with a glass-floored deck at 478m. Timed for sunset.)</span></li>
+    <li><strong>Banpo Bridge Rainbow Fountain, 19:30</strong> <span class="why">(the world's longest bridge fountain — 1,140m and 380 jets firing off both sides of the bridge in time to music. Free, and the season ends 31 October.)</span></li>
+  </ul></div></details>
+
+  <details class="acc"><summary><span class="tag t-move">Sat 31</span><span class="st">Halloween, homeward</span><span class="ss">05:15 alarm · KE907 · land 16:30</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>06:00 AREX Express</strong> <span class="why">(the fast airport train again — Seoul Station to Incheon Terminal 2 in 51 minutes.)</span></li>
+    <li><strong>10:40 KE907 to Heathrow</strong> <span class="why">(⚠️ Terminal 2 at Incheon, not Terminal 1 — the reverse of Narita.)</span></li>
+    <li><strong>16:30 land at Heathrow</strong> <span class="why">(same-day arrival thanks to the time difference. Home for the trick-or-treaters.)</span></li>
+  </ul></div></details>
+
   </div>
+</section>
+
+<!-- ═══════════ LOCKED IN ═══════════ -->
+<section class="sec" id="locked">
+  <div class="sec-head"><h2>🔒 Locked in</h2></div>
+  <div class="rule"></div>
+  <p class="sec-sub">Paid for, confirmed, and not changing. Everything else is built around these.</p>
+
+  <details class="acc" open><summary><span class="st">✈️ Flights — Korean Air · ref EFQDVD</span><span class="ss">Economy · 1 checked bag each · lead passenger ROSS/ETHANSAMUEL</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th>Date</th><th>Flight</th><th>Route</th><th>Times</th><th>Seat</th></tr></thead>
+      <tbody>
+        <tr><td>Fri 16 Oct</td><td>KE908</td><td>LHR → ICN</td><td>19:35 → 16:15 (+1)</td><td>34G</td></tr>
+        <tr><td>Sat 17 Oct</td><td>KE713</td><td>ICN → NRT</td><td>17:15 → 19:45</td><td>36F</td></tr>
+        <tr><td>Tue 27 Oct</td><td>KE704</td><td>NRT → ICN</td><td>14:00 → 16:40</td><td>34F</td></tr>
+        <tr><td>Sat 31 Oct</td><td>KE907</td><td>ICN → LHR</td><td>10:40 → 16:30</td><td>33G</td></tr>
+      </tbody>
+    </table></div>
+    <div class="warn">⚠️ Korean Air use <strong>Narita Terminal 1</strong> but <strong>Incheon Terminal 2</strong>. They are the opposite way round — check the board, not your memory.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🏨 Hotels — all confirmed</span><span class="ss">4 hotels · 14 nights on the ground · £4,601.49 total</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th>Hotel</th><th>Dates</th><th class="num">Nights</th><th class="num">Cost</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Hotel Monte Hermana Tokyo</strong><br><span style="color:var(--muted)">3-3-15 Nihonbashi, Chuo-ku</span></td><td>Oct 17–22</td><td class="num">5</td><td class="num">£1,907.90</td></tr>
+        <tr><td><strong>hotel androoms Kyoto Shichijo</strong><br><span style="color:var(--muted)">Walkable from Kyoto Station</span></td><td>Oct 22–24</td><td class="num">2</td><td class="num">£522.79</td></tr>
+        <tr><td><strong>Sheraton Grande Tokyo Bay</strong><br><span style="color:var(--muted)">1-9 Maihama, Urayasu</span></td><td>Oct 24–27</td><td class="num">3</td><td class="num">£1,279.61</td></tr>
+        <tr><td><strong>ENA Suite Hotel Namdaemun</strong><br><span style="color:var(--muted)">Seoul</span></td><td>Oct 27–31</td><td class="num">4</td><td class="num">£891.19</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">The Monte Hermana sits on the <strong>Ginza Line</strong> — Tokyo's oldest subway, which runs to roughly half of everything you want to see. That is why three of the four Tokyo days need almost no travel.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🏰 Disney — already paid</span><span class="ss">Two park days, both reserved</span></summary>
+  <div class="acc-body"><ul class="bul">
+    <li><strong>Sun 25 Oct → Tokyo Disneyland</strong> <span class="why">(res. A00616088683)</span></li>
+    <li><strong>Mon 26 Oct → Tokyo DisneySea</strong> <span class="why">(res. A00616088973)</span></li>
+  </ul>
+  <div class="note">Full tactical briefing in the <a href="#disney">Disney section</a>. Read it the night before.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🎨 teamLab Planets — booked ✅</span><span class="ss">Tue 20 Oct · admission window 11:00–11:30 JST</span></summary>
+  <div class="acc-body">
+    <div class="ok">✅ <strong>Entrance Pass, 5 guests</strong> — 2 Adults · 2 Junior/High School · 1 Child. Inquiry no. <strong>b34256aa99532bf2b4</strong>. Already paid.</div>
+    <div class="warn">⚠️ <strong>The QR code only appears after 00:00 on the day of admission.</strong> Don't panic on the 19th when it's blank — that's normal. Screenshot it on the morning of the 20th.</div>
+    <div class="warn">⚠️ The 11:00–11:30 window is your <strong>arrival slot, not your stay time</strong>. Turn up inside it and expect to queue.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🍽️ The diet rule</span><span class="ss">Fish ✅ · no shellfish ❌ · no meat unless kosher ❌</span></summary>
+  <div class="acc-body">
+    <p>Fish and vegetables at normal restaurants; certified kosher for anything meaty; no shellfish anywhere. Full detail, the three hidden traps and the Korean phrase you'll need are in <a href="#food">the food section</a>.</p>
+  </div></details>
+</section>
+
+<!-- ═══════════ TO BOOK ═══════════ -->
+<section class="sec" id="book">
+  <div class="sec-head"><h2>✅ What to book</h2></div>
+  <div class="rule"></div>
+  <p class="sec-sub">All prices in £. Ordered by urgency — the red one has a hard deadline.</p>
+
+  <div class="alarm">
+    🚨 <strong>SET A PHONE ALARM: Sunday 4 October, 16:00 UK time.</strong><br>
+    That is midnight JST on Monday 5 October — the moment Shibuya Sky tickets for your date go on sale. It runs a rolling 14-day window: no ticket for a given date exists until exactly two weeks before. This is the opposite of how most attractions work and it catches people out constantly.
+  </div>
+
+  <div class="tools" style="margin-top:16px">
+    <button class="tbtn" data-open="bk">Open all</button>
+    <button class="tbtn" data-close="bk">Close all</button>
+  </div>
+
+  <div data-grp="bk">
+
+  <details class="acc" open><summary><span class="tag t-move" style="background:#ffe8e3;color:#b8391a;border-color:#f7cec4">🔴 This week</span><span class="st">🌇 Shibuya Sky</span><span class="ss">Mon 19 Oct, 16:30 · ~£70 family · books 4 Oct at 16:00 UK</span></summary>
+  <div class="acc-body">
+    <p><strong>What it is:</strong> an open-air rooftop on top of Shibuya Scramble Square — 47 floors, 229 metres, with no glass between you and the city. You can lie on the deck, walk the edge, and look straight down onto Shibuya Crossing. On a clear day, Mount Fuji to the west.</p>
+    <p><strong>⏰ Why the 16:30 slot:</strong> Tokyo sunset in late October is around 17:00. A 16:30 entry gets you daylight, the sunset, and the city lighting up — three views for one ticket.</p>
+    <ul class="bul">
+      <li>🎟️ Book at <strong>shibuya-scramble-square.com</strong>, or via Klook if a UK card gets rejected</li>
+      <li>⚡ Sunset slots (15:00 onwards) go within minutes — be logged in with payment details saved and 3D Secure ready <em>before</em> the clock ticks over</li>
+      <li>💷 ¥2,500 pp online vs ¥3,000 at the door — and if it's sold out online, the walk-up counter is sold out too</li>
+      <li>✅ Free cancellation until the day before</li>
+      <li>⚠️ Some sources claim a 28-day window instead. Assume 14 days, but check from ~20 September anyway — checking early costs nothing</li>
+    </ul>
+    <div class="note">📍 It sits directly above Shibuya Station, a 10-minute walk from Shibuya Parco where you'll already be. <strong>Zero extra travel.</strong></div>
+    <div class="warn">⚠️ Genuinely open-air and windy at that height. Take a layer. No loose hats — they enforce it. Large bags go in free lockers.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="tag t-move">🟠 2–4 weeks</span><span class="st">The booking list — 7 items</span><span class="ss">Transport ~£803 · restaurants ~£150–300</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th class="num">#</th><th>What</th><th>When</th><th>Book at</th><th class="num">Cost</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Shinkansen Tokyo → Kyoto</td><td>Thu 22 Oct, 09:00 — Nozomi 135</td><td><strong>✅ BOOKED</strong> (Klook)</td><td class="num">£331.07</td></tr>
+        <tr><td class="num">2</td><td>Shinkansen Kyoto → Tokyo</td><td>Sat 24 Oct, 10:30 Nozomi</td><td>Klook</td><td class="num">~£310</td></tr>
+        <tr><td class="num">3</td><td>Limousine Bus Sheraton → Narita</td><td>Tue 27 Oct, 09:08</td><td>limousinebus.co.jp</td><td class="num">~£60</td></tr>
+        <tr><td class="num">4</td><td>Seoul Sky — Lotte World Tower</td><td>Fri 30 Oct, 16:45</td><td>Klook / Trazy</td><td class="num">~£73</td></tr>
+        <tr><td class="num">5</td><td>David's Deli — Tokyo kosher</td><td>One Tokyo evening</td><td>Direct</td><td class="num">~£20–30 pp</td></tr>
+        <tr><td class="num">6</td><td>Chabad Korea — Seoul kosher</td><td>Wed 28 or Thu 29</td><td>jewishkorea.com</td><td class="num">~£20–30 pp</td></tr>
+        <tr><td class="num">7</td><td>Osegye Hyang or Sanchon — Insadong</td><td>Wed 28 Oct dinner</td><td>Direct / Naver</td><td class="num">£7–27 pp</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>1 · Tokyo → Kyoto — ✅ booked</h4>
+    <p>Nozomi 135, Tokyo Station 09:00 → Kyoto 11:15, 2h 15m. Booked via Klook: 4 Adults (Japanese rail counts 12 and above as adult, so both teenagers pay full) + 1 Child (6–11, half fare). Mt. Fuji side, £24.09 — a one-off charge for the whole booking, not per person. Total £331.07 after discount. QR-code boarding, changeable ticket.</p>
+    <div class="warn">⚠️ <strong>Pre-sale:</strong> tickets are issued <strong>22 September 2026</strong>. No usable QR until then. Diarise the 22nd to check it's landed and the seats came through.</div>
+
+    <h4>2 · Kyoto → Tokyo</h4>
+    <p>Book the <strong>10:30 Nozomi</strong>. Gets you to Tokyo Station 12:45, Sheraton by 15:00 with time for lunch at Ikspiari, pool still 15:30.</p>
+    <div class="note">💷 Do <strong>not</strong> pay the Mt. Fuji seat fee on the return. You're travelling east; Fuji is on the wrong side and you'd be past it before anyone looked up. Saves £24.</div>
+    <p>🧳 <strong>Luggage:</strong> any case over 160cm total (H+W+D) needs a reserved oversized-luggage seat, booked in advance — it cannot be arranged at the gate, and it's ¥1,000 per bag plus your luggage moved away from you. ✅ You've measured: all five cases are under 160cm, so this doesn't apply — which is why you were free to spend the seat fee on the Fuji view instead.</p>
+
+    <h4>3 · Limousine Bus</h4>
+    <p>A coach picking up at the Sheraton's own first-floor entrance, direct to Narita. ¥2,900 adult / ¥1,450 child. The <strong>09:08</strong> gets you to Terminal 1 at 10:35 — 3h25 before your flight. Backup with more cushion: 08:28 → 09:55.</p>
+
+    <h4>4 · Seoul Sky</h4>
+    <p>The observatory on floors 117–123 of the Lotte World Tower: 555m, 123 floors, the world's fifth-tallest building, with a glass-floored Sky Deck at 478m you stand on and look straight down through. Book the <strong>16:45</strong> slot — sunset in Seoul on 30 October is ~17:30, so you get daylight, sunset and full night city in one visit. ₩31,000 adult / ₩27,000 child at the door; online is ~12% less.</p>
+    <div class="note">🎫 <strong>Do you need to book?</strong> Not in the sell-out sense — unlike teamLab or Shibuya Sky there's no hard cap, and walk-up tickets are sold every day. But it's a Friday sunset slot, which is peak, and the counter queue can run 30+ minutes. Booking online gets the ~12% discount and skips that queue — worth doing, just not time-critical.</div>
+
+    <h4>5 · David's Deli — Tokyo</h4>
+    <p>Tokyo's only kosher restaurant. 5-13-13 Mita, Minato City (Shirokane-Takanawa station). Certified by Chabad of Tokyo under Chief Rabbi Mendi Sudakevich. This is the kosher ramen place you half-remembered — the menu has kosher beef ramen, yakisoba, yakitori, plus tuna, salmon, omelette and falafel in pita. Small room, book ahead.</p>
+
+    <h4>6 · Chabad Korea — Seoul</h4>
+    <p>35-10 Itaewon-ro 49-gil, Hannam-dong, Yongsan-gu. ~10:00–22:00. Kosher restaurant on site, plus a kosher shop, plus delivery. Korea is the harder country for you — go once to eat and stock up at the shop.</p>
+
+    <h4>7 · Insadong temple food</h4>
+    <p>Korean Buddhist temple cuisine (<em>sachal eumsik</em>) is entirely plant-based: no meat, fish, dairy, eggs, no shellfish, and no fermented shrimp in the kimchi. It's a 1,500-year-old tradition and the cleanest possible solution to your rules.</p>
+    <ul class="bul">
+      <li><strong>Osegye Hyang</strong> £7–12 pp <span class="why">(vegan Korean classics)</span></li>
+      <li><strong>Sanchon</strong> £14–27 pp <span class="why">(20-plate temple set with live music)</span></li>
+      <li><strong>Balwoo Gongyang</strong> £22–65 pp <span class="why">(Michelin-starred, books out far ahead)</span></li>
+    </ul>
+  </div></details>
+
+  <details class="acc"><summary><span class="tag t-move">🟡 Reminder</span><span class="st">Nice-to-have bookings</span><span class="ss">Hanbok · Skytree</span></summary>
+  <div class="acc-body">
+    <ul class="bul">
+      <li><strong>8 · Hanbok rental, Gyeongbokgung</strong> — walk-in works, pre-book for better choice. ~£8–15 pp. <span class="why">(Traditional Korean dress, rented from shops along the palace wall. Anyone in hanbok enters the palaces free, and Korean visitors do it too — it isn't a tourist gimmick. The kids will get far more out of the palace in costume.)</span></li>
+      <li><strong>9 · Tokyo Skytree</strong> — optional; book online to skip the ticket queue.</li>
+    </ul>
+  </div></details>
+
+  <details class="acc"><summary><span class="tag t-move">🟢 Free admin</span><span class="st">Before you fly — 6 jobs</span><span class="ss">One of them is mandatory</span></summary>
+  <div class="acc-body">
+    <div class="warn">⚠️ <strong>Korea e-Arrival Card — MANDATORY</strong>, all five of you, kids included. File within 3 days of arriving. UK passports need no K-ETA (waived to 31 Dec 2026), but the e-Arrival Card is <em>separate and required</em>. People confuse the two and turn up with neither.</div>
+    <ul class="bul">
+      <li><strong>Visit Japan Web</strong> — vjw.digital.go.jp. Free, a website not an app, ignore anything charging money. One account holds all five. Finish 6+ hrs before landing. Optional, but saves 20–40 mins at immigration.</li>
+      <li><strong>Tokyo Disney Resort app</strong> — link all 5 tickets to <em>one</em> account so one person can buy Premier Access for everyone. Register and test a payment card now. Nothing can be reserved until your ticket is physically scanned at the gate.</li>
+      <li><strong>Mobile Suica</strong> — iPhone: set up in Apple Wallet before you fly. Android: foreign cards often fail, so buy a Welcome Suica at Narita instead. Works on every train nationwide including Kyoto. Physical cards top up with cash only.</li>
+      <li><strong>T-money card, Seoul</strong> — any GS25 or CU convenience store on arrival, ~£2.50 + top-up.</li>
+      <li><strong>Luggage forwarding (optional)</strong> — arrange at the Monte Hermana desk on Wed 21 Oct. ~£10–12 per case, Tokyo → Sheraton for Sat 24. It's how Japan travels.</li>
+    </ul>
+  </div></details>
+
+  <details class="acc"><summary><span class="tag t-move">❌ Not doing</span><span class="st">Deliberately left out</span><span class="ss">And the reason for each</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th>Not doing</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Sushi-making class</td><td>Removed — that morning is now free for exploring Asakusa properly</td></tr>
+        <tr><td>DMZ tour</td><td>Removed at your request</td></tr>
+        <tr><td>Lotte World theme park</td><td>Removed at your request (the tower observatory, #4, is separate and stays)</td></tr>
+        <tr><td>Anything in Osaka</td><td>You're staying in Kyoto — and Jidai Matsuri is on your arrival day</td></tr>
+        <tr><td>Street go-karts</td><td>18+ with an International Driving Permit, single-seat — the kids legally cannot ride</td></tr>
+        <tr><td>City Circuit Tokyo Bay</td><td>Removed at your request. Toyosu Market + Senkyaku Banrai replaces it — a second, completely different market, 5 minutes' walk from teamLab</td></tr>
+        <tr><td>JR Pass</td><td>Two Shinkansen legs don't justify it, and Nozomi isn't covered anyway</td></tr>
+        <tr><td>Freshwater swimming</td><td>12–16°C in late October, nothing lifeguarded running</td></tr>
+      </tbody>
+    </table></div>
+  </div></details>
+
+  <details class="acc"><summary><span class="tag t-move">💷 Total</span><span class="st">What's still to pay</span><span class="ss">~£1,025–1,175 before departure</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th>Item</th><th class="num">Cost</th></tr></thead>
+      <tbody>
+        <tr><td>⏰ Shibuya Sky (books 4 Oct)</td><td class="num">~£70</td></tr>
+        <tr><td>🟠 Transport</td><td class="num">~£803</td></tr>
+        <tr><td>🍽️ Restaurants</td><td class="num">~£150–300</td></tr>
+        <tr><td>🎨 teamLab Planets</td><td class="num">✅ already paid</td></tr>
+        <tr><td><strong>Still to pay before departure</strong></td><td class="num"><strong>~£1,025–1,175</strong></td></tr>
+      </tbody>
+    </table></div>
+    <p>Then on the ground: Disney Premier Access ~£280–330 · local transport ~£150 · food and attractions.</p>
+  </div></details>
+
+  </div>
+</section>
+
+<!-- ═══════════ ITINERARY ═══════════ -->
+<section class="sec" id="itinerary">
+  <div class="sec-head"><h2>🗓️ The full itinerary</h2></div>
+  <div class="rule"></div>
+  <p class="sec-sub">Every day is a single geographic cluster. Daily travel time is stated at the top of each day. Tap a day to open it.</p>
+  <div class="tools">
+    <button class="tbtn" data-open="it">Open all days</button>
+    <button class="tbtn" data-close="it">Close all</button>
+  </div>
+
+  <div data-grp="it">
+
+  <!-- FRI 16 -->
+  <details class="acc"><summary><span class="tag t-move">Fri 16 Oct</span><span class="st">🛫 Departure</span><span class="ss">LHR → ICN, overnight</span></summary>
+  <div class="acc-body">
+    <p><strong>19:35 — KE908, LHR → ICN.</strong> Overnight, ~11 hrs.</p>
+    <div class="note">🎒 <strong>In hand luggage:</strong> passports, Visit Japan Web QR screenshots, chargers, snacks that clear customs (no fresh fruit or meat into Japan).</div>
+  </div></details>
+
+  <!-- SAT 17 -->
+  <details class="acc"><summary><span class="tag t-move">Sat 17 Oct</span><span class="st">🛬 Arrival</span><span class="ss">Write this one off</span></summary>
+  <div class="acc-body">
+    <div class="tl">
+      <div class="tl-row"><div class="tl-t">16:15</div><div class="tl-d">Land ICN, Seoul</div></div>
+      <div class="tl-row"><div class="tl-t">17:15</div><div class="tl-d">KE713 ICN → NRT</div></div>
+      <div class="tl-row"><div class="tl-t">19:45</div><div class="tl-d">Land Narita Terminal 1</div></div>
+      <div class="tl-row"><div class="tl-t">~20:45</div><div class="tl-d">Through immigration &amp; bags</div></div>
+      <div class="tl-row"><div class="tl-t">~21:00</div><div class="tl-d">Keisei Sky Access Express</div></div>
+      <div class="tl-row"><div class="tl-t">~22:05</div><div class="tl-d">Nihombashi Station</div></div>
+      <div class="tl-row"><div class="tl-t">~22:15</div><div class="tl-d">Hotel Monte Hermana ✅</div></div>
+    </div>
+    <h4>🚃 One train, no changes</h4>
+    <p>The Keisei Sky Access Express runs direct from Narita to Nihombashi in about 65 minutes — it joins the Toei Asakusa Line and Nihombashi is a stop on it. Roughly ¥1,500 (~£7) each.</p>
+    <p>With five people, five cases and a 20-hour travel day, <strong>"no transfers" beats saving ten minutes</strong>. Follow signs to Keisei at B1, buy at the machine, board a train marked <strong>Access Express</strong> (bound for Haneda / Nishi-Magome).</p>
+    <div class="warn">⚠️ Do <strong>NOT</strong> board a "Limited Express (Keisei Main Line)" — different, slower route.</div>
+    <h4>🌙 Tonight</h4>
+    <p>Nothing. Straight to bed. Grab a konbini haul on the walk in — onigiri, egg sandwiches, drinks.</p>
+  </div></details>
+
+  <!-- SUN 18 -->
+  <details class="acc"><summary><span class="tag t-tokyo">Sun 18 Oct</span><span class="st">🏮 The north-east loop</span><span class="ss">Asakusa · Kappabashi · Skytree · Ueno</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 08:00 · out by 09:00 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~40 minutes.</strong> Everything is on the Ginza Line and the Toei Asakusa Line — both of which run through Nihombashi Station.</div>
+    <p><strong>Why this cluster:</strong> Asakusa, Skytree and Ueno sit in a straight line north-east of your hotel. You go out along one line and come home along the same one. No day in Tokyo is easier on jet lag.</p>
+
+    <div class="stop">
+      <h4><span class="time">09:15</span> 🚇 Nihombashi → Asakusa</h4>
+      <p>Ginza Line, direct, 10 mins, ¥180 (£0.85). Your hotel sits on the Ginza Line — Tokyo's oldest subway, which runs to half of what you want to see. This is a very good hotel location.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">09:30</span> ⛩️ Senso-ji Temple</h4>
+      <p>Tokyo's oldest temple, founded 645. Come through the Kaminarimon with its enormous red lantern, walk Nakamise-dori (250m of senbei crackers, ningyo-yaki cakes and fans), then the Hozomon gate and the main hall. <strong>Free.</strong></p>
+      <p>The incense cauldron out front — waft the smoke over yourself. Said to be healing.</p>
+      <div class="note"><span class="new">NEW</span> With the sushi class gone you now have <strong>three unhurried hours</strong> here. Get off Nakamise-dori and into the side streets — Denboin-dori (a reconstructed Edo-period shopping street), the quiet garden behind the temple, and Hoppy Street. This is the bit most visitors skip because they're rushing.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">11:15</span> 🔪 Kappabashi Kitchen Street</h4>
+      <div class="travel">🚶 10 minutes' walk west from Senso-ji. No train.</div>
+      <p>800 metres of restaurant-supply shops. Handmade Japanese kitchen knives, ceramics, and the shops selling plastic food samples — the astonishingly realistic fake dishes in Japanese restaurant windows. You can buy a fake bowl of ramen or a sushi keyring. Genuinely funny and a good souvenir hunt.</p>
+    </div>
+
+    <div class="stop"><h4><span class="time">12:30</span> 🍽️ Lunch in Asakusa</h4></div>
+
+    <div class="stop">
+      <h4><span class="time">14:00</span> 🗼 Tokyo Skytree</h4>
+      <div class="travel">🚶 20-minute walk across the Sumida River (pleasant, good views back to Senso-ji) or one stop on the Tobu Skytree Line.</div>
+      <p>At 634 metres it's the tallest tower in the world. Two decks — the lower one at 350m is plenty. <span class="cost">~£12–20 pp</span> The Solamachi mall at the base has 300+ shops.</p>
+      <div class="note">🐠 <strong>Rainy-day swap:</strong> the Sumida Aquarium is in the same building. Penguins, jellyfish, indoors, ~£12.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:30</span> 🛍️ Ueno &amp; Ameyoko Market</h4>
+      <div class="travel">🚇 Toei Asakusa Line back to Asakusa → Ginza Line 2 stops to Ueno. ~20 mins.</div>
+      <p>Ameyoko is a 500m open-air market under and alongside the elevated railway — a genuine post-war black-market street that never went away. Dried fish, fresh fruit, sweets, cheap clothes, street food, stallholders actually shouting. Chaotic and very un-Tokyo.</p>
+      <p>🌳 <strong>Ueno Park</strong> is adjacent if there's energy left — free, huge, with the zoo and several national museums.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">17:45</span> 🚇 Ueno → Nihombashi</h4>
+      <p>Ginza Line, direct, 8 minutes. You're on the way home already.</p>
+    </div>
+
+    <div class="stop">
+      <h4>🍽️ Dinner</h4>
+      <p><strong>Coredo Muromachi</strong> — three food-and-craft buildings, 5 minutes' walk from your hotel, with proper Japanese restaurants and an English-friendly basement food hall.</p>
+    </div>
+  </div></details>
+
+  <!-- MON 19 -->
+  <details class="acc"><summary><span class="tag t-tokyo">Mon 19 Oct</span><span class="st">🌃 The west line</span><span class="ss">Meiji Jingu · Harajuku · Shibuya · Shibuya Sky · Shinjuku</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 08:00 · out by 09:00 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~55 minutes.</strong> Meiji Jingu → Harajuku → Omotesando → Shibuya → Shinjuku runs almost entirely on foot and on two stops of the Yamanote Line.</div>
+    <p><strong>Why this cluster:</strong> these five places sit in a 3km strip in west Tokyo. You walk between the first four. Only the last hop needs a train.</p>
+    <div class="note"><span class="new">NEW</span> Shibuya Sky is back in, and it slots in perfectly — it's directly above Shibuya Station, a 10-minute walk from Shibuya Parco, so it costs you no extra travel at all. Sunset there, then two stops north to Shinjuku for the neon.</div>
+
+    <div class="stop">
+      <h4><span class="time">09:20</span> 🌲 Meiji Jingu Shrine</h4>
+      <div class="travel">🚇 Ginza Line to Omotesando → Chiyoda Line one stop → Meiji-jingumae. ~25 mins, ¥210.</div>
+      <p>Start with the calm before the chaos. 175 acres of forest inside Tokyo — 100,000 trees, all planted by hand in 1920, dedicated to Emperor Meiji. The walk from the cypress torii to the main hall takes 10 quiet minutes and you'll forget you're in a city of 37 million. <strong>Free.</strong></p>
+      <p>🍶 Find the wall of sake barrels donated by brewers across Japan.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">10:50</span> 🎀 Harajuku · Takeshita-dori</h4>
+      <div class="travel">🚶 Straight out of the shrine, across the road. Zero travel.</div>
+      <p>350m of teen fashion, crepe stands, rainbow candyfloss, purikura booths and shops full of things that make no sense. Your 13-year-old's favourite 90 minutes of the trip.</p>
+      <p>🍓 Marion Crepes or Angel's Heart — fruit-and-cream ones are safe.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">12:30</span> 🌳 Omotesando</h4>
+      <div class="travel">🚶 Walk south. Zero travel.</div>
+      <p>Tokyo's Champs-Élysées — a tree-lined boulevard with some of the best contemporary architecture in the city. Lunch here or at Omotesando Hills.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">14:00</span> 🚦 Shibuya</h4>
+      <div class="travel">🚶 20 minutes down Meiji-dori, or one stop on the Fukutoshin Line.</div>
+      <ul class="bul">
+        <li>🐕 <strong>Hachiko statue</strong> — the dog who waited nine years at the station for an owner who had died. Tell them the story before you show them</li>
+        <li>🚶‍♂️ <strong>Shibuya Crossing</strong> — the world's busiest pedestrian crossing, up to 3,000 people per light. Cross it, then watch it from above. Free viewpoints: the Starbucks in Tsutaya (packed) or the Magnet by Shibuya109 rooftop</li>
+        <li>🛍️ <strong>Shibuya 109</strong> — nine floors of Japanese teen fashion</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">15:00</span> 🎮 Shibuya Parco</h4>
+      <div class="travel">🚶 10 minutes north of the crossing. Zero travel.</div>
+      <p>The 6th floor is "Cyberspace Shibuya" — four flagship stores in one place:</p>
+      <ul class="bul">
+        <li>🍄 <strong>Nintendo Tokyo</strong> — the only official Nintendo store in Japan. Mario, Zelda, Splatoon, Animal Crossing merchandise you cannot buy anywhere else</li>
+        <li>⚡ <strong>Pokémon Center Shibuya</strong> — themed around the Shibuya gym leader, with a giant Mewtwo</li>
+        <li>🎩 <strong>Capcom Store</strong> — Monster Hunter, Street Fighter, Resident Evil</li>
+        <li>📕 <strong>Jump Shop</strong> — One Piece, Naruto, Demon Slayer, Dragon Ball</li>
+      </ul>
+      <div class="warn">⚠️ Nintendo Tokyo can issue timed entry tickets on very busy days — check the queue when you arrive.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:30</span> 🌇 Shibuya Sky ⏰</h4>
+      <div class="travel">🚶 10 minutes back south to Shibuya Scramble Square, directly above the station. Zero travel.</div>
+      <p>An open-air rooftop at 229 metres, 47 floors up, with no glass between you and the city. You can lie on the deck, walk the edge, and look straight down onto the crossing you were standing in two hours earlier. On a clear day, Mount Fuji to the west.</p>
+      <p>🌅 Sunset in Tokyo on 19 October is around 17:00. Entering at 16:30 gives you the city in daylight, the sunset itself, and the whole thing lit up after dark — <strong>three views for one ticket</strong>.</p>
+      <div class="warn">⚠️ Genuinely open-air and very windy at that height. Take a layer. No loose hats — they enforce this. Large bags go in free lockers. ⏱️ Allow 60–75 minutes.</div>
+      <p><span class="cost">£14 pp · £70 family</span></p>
+      <div class="note">🆓 <strong>Free backup</strong> if it's clouded over or cancelled for wind: the Tokyo Metropolitan Government Building in Shinjuku has a free deck at 202m, open until 22:00 — and you're going to Shinjuku next anyway.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">18:00</span> 🏮 Shinjuku</h4>
+      <div class="travel">🚇 JR Yamanote Line from Shibuya. 2 stops, 5 minutes, ¥160. Head out the East Exit.</div>
+      <p>This is the neon.</p>
+      <ul class="bul">
+        <li>🍢 <strong>Omoide Yokocho</strong> ("Memory Lane") — a lane of tiny smoke-filled post-war yakitori bars under the railway. Walk it even if you don't eat there. Extraordinary atmosphere</li>
+        <li>🥃 <strong>Golden Gai</strong> — 200+ matchbox bars in six alleys. Walk through, don't go in — mostly adults-only with cover charges</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4>🍽️ Dinner</h4>
+      <p>Find a <strong>kaiten-zushi</strong> (conveyor belt) place — you see exactly what you're taking, which solves your dietary problem in the most fun possible way. Uobei or Genki Sushi: cheap, touchscreen-ordered in English.</p>
+      <div class="travel">🚇 Home: Shinjuku → Nihombashi, Marunouchi Line, ~20 mins, direct.</div>
+    </div>
+  </div></details>
+
+  <!-- TUE 20 -->
+  <details class="acc"><summary><span class="tag t-tokyo">Tue 20 Oct</span><span class="st">🐟 The bay line</span><span class="ss">Tsukiji · teamLab · Toyosu · Odaiba</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 07:45 — later than the rest of the trip, but still one early start &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~50 minutes</strong>, entirely one-directional. Tsukiji → Toyosu → Odaiba → home. You never once double back.</div>
+    <p><strong>Why this cluster:</strong> the Yurikamome elevated line runs from Toyosu round the bay to Shimbashi, and today's stops sit on it in order. Get on at one end, get off at the other, come home on the Ginza Line.</p>
+
+    <div class="stop">
+      <h4><span class="time">08:30</span> 🐟 Tsukiji Outer Market</h4>
+      <div class="travel">🚇 Tozai Line to Kayabacho → Hibiya Line to Tsukiji. ~10 mins, ¥180. Exit 1 puts you two minutes away.</div>
+      <p>The inner wholesale market moved to Toyosu in 2018, but the Outer Market never closed — 460+ shops and stalls. Most open ~05:00 and shutter by 14:00.</p>
+      <div class="note">⏰ <strong>Honest note on the later start:</strong> the true sweet spot is 07:00–09:00, before the market gets busy — at 08:30 you're arriving right at the edge of that window rather than the quietest part of it, but it's still well before the 10:00 tour-group wave and everything's fully stocked. The trade-off for the extra sleep is less time to browse (roughly 90 minutes instead of 2.5 hours) to still make teamLab's fixed 11:00 slot.</div>
+      <p>📅 <strong>Tuesday is deliberate.</strong> Sundays and some Wednesdays it's closed; Saturdays it's heaving.</p>
+      <h4>🍳 What to eat here — all safe for you</h4>
+      <ul class="bul">
+        <li><strong>Tamagoyaki</strong> — sweet rolled omelette on a stick, cooked in front of you. ~¥200</li>
+        <li><strong>Maguro skewers</strong> — grilled tuna</li>
+        <li><strong>Tuna donburi</strong> — raw tuna over rice at one of the small counters</li>
+        <li><strong>Strawberry daifuku</strong> and melon pan</li>
+        <li><strong>Dashi-maki</strong> and inari-zushi</li>
+        <li>❌ Grilled scallop — skip, shellfish</li>
+      </ul>
+      <div class="warn">💰 Bring cash. Walking-and-eating is discouraged — eat at the stall.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">10:00</span> 🚇 Tsukiji → Shin-Toyosu</h4>
+      <p>Walk to Tsukijishijo (Oedo Line) → 2 stops to Tsukishima → Yurakucho Line 1 stop to Toyosu → Yurikamome 1 stop to Shin-Toyosu. ~20 mins.</p>
+      <div class="note">🚝 The Yurikamome is driverless and elevated — sit at the very front. The kids will fight over it.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">11:00</span> 🎨 teamLab Planets ✅</h4>
+      <div class="ok">🎫 <strong>Booked</strong> — Entrance Pass, 5 guests (2 Adults · 2 Junior/High School · 1 Child). Inquiry no. b34256aa99532bf2b4. Admission window 11:00–11:30.</div>
+      <div class="warn">⚠️ The QR code only appears after 00:00 on the day. It will look blank the night before — that's normal. Screenshot it on the morning of the 20th before you leave Tsukiji.<br>⚠️ Arrive within the 11:00–11:30 window and expect to queue. That's your arrival slot, not your stay time.</div>
+      <p>📐 teamLab's 11:00 slot is fixed, which is what caps the market at 90 minutes. Market 08:30–10:00, travel 10:00–10:40, leaving a comfortable margin before the door at 11:00.</p>
+      <p>You go barefoot, roll your trousers up, and wade through knee-deep water under projected koi that scatter when you touch them. Mirrored infinity rooms, a hall of floating orchids, a sphere room.</p>
+      <div class="warn">⚠️ Wear shorts or trousers that roll above the knee. Skirts don't work (mirrored floors). Lockers provided.</div>
+      <p>⏱️ 90 mins – 2 hrs. 💷 ✅ Already paid.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">13:00</span> 🐟 Toyosu Market &amp; Senkyaku Banrai <span class="new">NEW</span></h4>
+      <div class="travel">🚶 A covered walkway from teamLab, or one Yurikamome stop to Shijo-mae. Under 10 minutes.</div>
+      <p>This replaces the go-karts — a second market, and a completely different one from Tsukiji. Tsukiji is the retail market: stalls, street food, shoppers. <strong>Toyosu is the working wholesale market</strong> that took over Tsukiji's inner operation in 2018 — the one that handles the tuna. You see it from glass-walled visitor corridors above the trading floor, looking down on the real thing.</p>
+      <h4>🏢 Toyosu Market — the visitor corridors</h4>
+      <p>Open 05:00–17:00, free. Raised glass walkways over the fisheries wholesale floor and the fruit and vegetable market, with the PR Corner (08:30–14:30) explaining how it all works.</p>
+      <div class="note">⚠️ <strong>Honest note on timing:</strong> the tuna auction runs 05:30–06:30 and the serious trading is finished by mid-morning. At 13:00 you are seeing the building, the scale and the tail end of the day, not the auction. Getting the auction would mean a 05:00 start, and you're not doing that on a teamLab day.</div>
+      <h4>🏮 Toyosu Senkyaku Banrai — the Edo food street</h4>
+      <p>Across the walkway. Retail 10:00–18:00, dining 10:00–22:00. Opened 2024 and built as a reconstructed Edo-period townscape — around 30 shops and restaurants under wooden eaves and lanterns.</p>
+      <p>🍽️ <strong>Eat lunch here.</strong> Safe picks: tuna and salmon donburi from one of the seafood counters; tamagoyaki, grilled kosher fish, rice bowls; melon pan, taiyaki, matcha soft serve.</p>
+      <div class="note">♨️ There's a <strong>free public foot bath</strong> on the rooftop terrace (from 09:00) with views over the bay — an excellent thing to do with a tired 10-year-old.</div>
+      <div class="warn">⚠️ Skip the uni, scallop, crab and octopus counters — plenty here, and plenty that isn't.<br>⚠️ Senkyaku Banrai opens every day, even when the market building is shut. Toyosu Market itself closes Sundays, national holidays and certain Wednesdays — Tuesday the 20th should be open, but check the official market calendar before you go.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">15:00</span> 🤖 Odaiba</h4>
+      <div class="travel">🚝 Yurikamome, 2–3 stops onward. Still the same direction.</div>
+      <ul class="bul">
+        <li>🗽 Odaiba's <strong>Statue of Liberty replica</strong> with the Rainbow Bridge behind it — the classic Tokyo Bay night shot</li>
+        <li>🎮 <strong>Joypolis</strong> — indoor Sega theme park, if there's energy left</li>
+      </ul>
+      <div class="travel">🚇 Home: Yurikamome to Shimbashi (end of the line) → Ginza Line direct to Nihombashi. ~25 mins.</div>
+    </div>
+  </div></details>
+
+  <!-- WED 21 -->
+  <details class="acc"><summary><span class="tag t-tokyo">Wed 21 Oct</span><span class="st">👑 The central ring</span><span class="ss">Imperial Palace · Akihabara · Kanda Myojin · Ginza</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 08:00 · out by 09:00 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~25 minutes</strong> — the shortest travel day of the trip. Two of the four stops are walkable from your hotel.</div>
+    <p><strong>Why this cluster:</strong> Imperial Palace, Akihabara, Nihonbashi and Ginza form a tight ring around your hotel. You walk out, take two short trains, and walk back.</p>
+
+    <div class="stop">
+      <h4><span class="time">09:15</span> 🏯 Imperial Palace East Gardens</h4>
+      <div class="travel">🚶 15 minutes' walk from your hotel. No train at all.</div>
+      <p>These are the grounds of Edo Castle — the shogun's stronghold, and where the Imperial Family moved in 1868. You can climb the massive stone base of the keep (Tenshudai), all that survived the great fire of 1657, and stand where the tallest castle tower in Japanese history stood. Enormous gates, moats, and the Ninomaru garden. <strong>Free.</strong></p>
+      <div class="warn">⚠️ Closed Mondays and Fridays. Wednesday is fine. Open ~09:00–17:00.</div>
+      <p>🌉 Walk round to <strong>Nijubashi Bridge</strong> for the classic palace photo, then Wadakura Fountain Park.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">11:15</span> 🎌 Akihabara</h4>
+      <div class="travel">🚶 Exit the Ote-mon gate, 5 minutes' walk to Tokyo Station → JR Yamanote/Keihin-Tohoku, 2 stops, 4 minutes to Akihabara.</div>
+      <p>Electric Town. Seven-storey buildings that are entirely anime.</p>
+      <ul class="bul">
+        <li>🕹️ <strong>GiGO / Taito Station arcades</strong> — multi-floor, rhythm games, crane machines. Give each kid ¥1,000 and set them loose</li>
+        <li>🐧 <strong>Don Quijote Akihabara</strong> — a chaotic multi-floor discount megastore stacked floor-to-ceiling with everything from snacks to cosplay, wrapped in the giant illuminated penguin sign. This is the building people mean when they say Akihabara looks like a film set</li>
+        <li>📚 <strong>Mandarake Complex</strong> — eight floors of manga, figures, collectibles</li>
+        <li>🃏 <strong>Yodobashi Akiba</strong> — nine floors of everything electronic</li>
+        <li>🛠️ <strong>Radio Center</strong> — the original 1950s warren of tiny electronics stalls under the tracks</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">13:15</span> ⛩️ Kanda Myojin Shrine <span class="new">NEW</span></h4>
+      <div class="travel">🚶 7 minutes' walk from Akihabara's Electric Town (Denkigai) exit. No train. Free.</div>
+      <p>One of Tokyo's great shrines, and almost nobody puts it in a family itinerary. Founded 730 AD — nearly 1,300 years old — and one of the three shrines behind the Kanda Matsuri, historically ranked among Japan's three greatest festivals.</p>
+      <p>The vermilion Zuishin-mon gate and main hall are startling: deep red and gold, with the Akihabara skyline right behind them. After the 1923 earthquake it was rebuilt in reinforced concrete — which is why it then survived the 1945 firebombing when most of old Tokyo didn't.</p>
+      <p><strong>Why it's brilliant here specifically:</strong> it's the guardian shrine of Akihabara, so it has completely absorbed the neighbourhood. People bring laptops and hard drives to be blessed, the shrine sells IT-protection amulets for your data, and it's the real-world setting for <em>Love Live!</em> — so the votive boards are covered in anime drawings alongside centuries-old prayers.</p>
+      <div class="note">🙏 Business prosperity, matchmaking and warding off misfortune. Buy the digital-protection charm — it's the single most Tokyo object you can bring home.</div>
+    </div>
+
+    <div class="stop"><h4><span class="time">14:15</span> 🍜 Lunch back in Akihabara</h4></div>
+
+    <div class="stop">
+      <h4><span class="time">15:00</span> 🌆 Akihabara, round two — the neon <span class="new">NEW</span></h4>
+      <div class="travel">🚶 No train — you never left the neighbourhood.</div>
+      <p>This is what actually gives Akihabara its "straight out of a movie" look, and it only switches on after dark. Chuo-dori, the main strip, is wall-to-wall illuminated signage several storeys high on every building face — it doesn't properly light up until the sky's gone dark, which in late October is from around 17:00. Take the afternoon slowly — more arcades, more of Don Quijote, a coffee break — and let the day tip into evening here rather than rushing off.</p>
+      <ul class="bul">
+        <li>🎰 <strong>GiGO Building 1</strong> — the tallest of the arcade towers, and it's at its best once it's lit</li>
+        <li>🚶 Just walk the length of <strong>Chuo-dori</strong> once it's dark. That's the whole activity, and it's the one that delivers what you're after</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">17:15</span> 🌆 Ginza (optional)</h4>
+      <div class="travel">🚶 JR one stop to Tokyo, 2 minutes, then a 10-minute walk — or skip it and stay for dinner in Akihabara instead.</div>
+      <p>Ginza Six, the Uniqlo flagship, the Ginza Wako clock tower, and the main street which is closed to traffic on weekend afternoons (not your day, but the shops are the point).</p>
+    </div>
+
+    <div class="stop">
+      <h4>🌙 Evening — pack</h4>
+      <p>📦 <strong>Optional but excellent — luggage forwarding (takkyubin).</strong> Ask the front desk tonight to send your big cases direct to the Sheraton Grande Tokyo Bay for Sat 24 Oct. ~£10–12 per case, next-day, completely reliable — it's how Japan travels.</p>
+      <p>You're arriving in Kyoto into a festival crowd and Kyoto stations have stairs. I'd do this.</p>
+    </div>
+  </div></details>
+
+  <!-- THU 22 -->
+  <details class="acc"><summary><span class="tag t-kyoto">Thu 22 Oct</span><span class="st">🎎 Tokyo → Kyoto · Festival of the Ages</span><span class="ss">Shinkansen · Sanjusangen-do · Jidai Matsuri · Nishiki · Pontocho</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 07:15 &nbsp;·&nbsp; 🚇 <strong>Travel after you arrive in Kyoto: ~15 minutes.</strong> Sanjusangen-do is a walk from your hotel, and everything after the parade is a walk from everything else.</div>
+    <div class="tl">
+      <div class="tl-row"><div class="tl-t">08:15</div><div class="tl-d">Check out Hotel Monte Hermana</div></div>
+      <div class="tl-row"><div class="tl-t">08:30</div><div class="tl-d">🚶 Walk to Tokyo Station (~12 mins)</div></div>
+      <div class="tl-row"><div class="tl-t">09:00</div><div class="tl-d">🚄 <strong>NOZOMI 135 → KYOTO ✅</strong></div></div>
+      <div class="tl-row"><div class="tl-t">11:15</div><div class="tl-d">Arrive Kyoto Station</div></div>
+      <div class="tl-row"><div class="tl-t">11:35</div><div class="tl-d">🚶 Drop bags at hotel androoms Kyoto Shichijo (walkable from the station)</div></div>
+      <div class="tl-row"><div class="tl-t">11:45</div><div class="tl-d">⛩️ Sanjusangen-do — 7 min walk from the hotel</div></div>
+      <div class="tl-row"><div class="tl-t">12:50</div><div class="tl-d">Lunch near the hotel</div></div>
+      <div class="tl-row"><div class="tl-t">13:20</div><div class="tl-d">🚇 Karasuma Line to Karasuma-Oike for the parade</div></div>
+    </div>
+
+    <div class="stop">
+      <h4>🚄 The Shinkansen — Nozomi 135 ✅</h4>
+      <p>Tokyo Station 09:00 → Kyoto 11:15. 2h 15m. QR-code boarding, changeable ticket. ¥14,170 (~£67) reserved. Platforms 14–19 at Tokyo Station, a separate gated area — follow the blue signs. Two tickets per person, feed both into the gate together.</p>
+      <div class="warn">⚠️ <strong>Pre-sale:</strong> your tickets are issued on <strong>22 September 2026</strong>. You won't have a usable QR until then — that's normal, not a problem. Diarise 22 Sept to check the QR has landed and that your seats came through as requested.</div>
+      <div class="note">🗻 <strong>SIT ON THE RIGHT — SEATS D AND E.</strong> Mount Fuji appears around 40–45 minutes out, near Shin-Fuji. Tell the kids to watch from 09:40.</div>
+      <p>🍱 Buy <strong>ekiben</strong> (station bento) on the platform before boarding. Salmon, tuna or vegetable ones. Half the fun.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">11:45</span> ⛩️ Sanjusangen-do (Rengeo-in) <span class="new">NEW</span></h4>
+      <p>You are staying at Shichijo. Sanjusangen-do is at Shichijo. It's a 7-minute walk from Keihan Shichijo Station and 15 minutes from Kyoto Station — effectively next door to your hotel, and it costs you zero travel. Leaving it out would have been the biggest miss in the plan.</p>
+      <p>A 120-metre wooden hall — the longest wooden structure of its kind in Japan, founded 1164, the current hall rebuilt in 1266. Inside, standing in rows ten deep, are <strong>1,001 life-size gilded statues of the thousand-armed Kannon</strong>, hand-carved from Japanese cypress. Every single face is different. In front of them stand 28 guardian deities, plus the wind and thunder gods.</p>
+      <p>You walk the length of it barefoot on the wooden floor, in silence, a few metres from the statues. It is the single most overwhelming interior in Kyoto and there is nothing else like it anywhere.</p>
+      <div class="note">📷 No photography inside the hall — which is part of why it works. Put the phones away.</div>
+      <p>⏰ 08:30–17:00 (1 April – 15 November), last entry 16:30. Open every day. <span class="cost">≈ £11 for the five of you</span> ⏱️ Allow 45–60 minutes.</p>
+      <p>🏛️ The Kyoto National Museum is directly across the street if you want it, but you won't have time today.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">13:35</span> 🏮 Jidai Matsuri · The Festival of the Ages</h4>
+      <p>You arrive in Kyoto on the best day of the Kyoto year. This is also the reason Osaka is off the plan.</p>
+      <p>One of Kyoto's three great festivals, held every 22 October since 1895. Roughly 2,000 people in meticulously researched period costume, walking the city in <strong>reverse chronological order</strong> — Meiji-era riflemen at the front, back through the Edo shogunate, the samurai eras, the Heian court, all the way to the 780s at the rear. Takes about five hours to pass.</p>
+      <div class="note">📍 <strong>Where to stand: Oike-dori, from ~13:35.</strong> 🚇 Karasuma Line to Karasuma-Oike, ~10 mins from Kyoto Station.</div>
+      <p><span class="new">NEW</span> I've picked Oike specifically for efficiency. The parade also starts at the Imperial Palace (12:00) and ends at Heian Shrine (14:30) — but Oike-dori is the only viewing spot that puts you within walking distance of everything else you'll do today. From here, Nishiki Market, Pontocho and the Kamo River are all 10–15 minutes on foot. <strong>You will not need another train until tomorrow.</strong></p>
+      <p><span class="new">NEW</span> The later train is actually an advantage. Because the procession runs in reverse chronological order, the front is 19th-century Meiji and the rear is the Heian court of the 780s — the oldest, most elaborate costumes in the whole thing. Arriving at 13:35 rather than 12:30 means you skip the rifles and catch the imperial court. That's the best section.</p>
+      <p>The procession is roughly 2km long, so it takes a long while to pass any single point. Oike is a wide boulevard with cafés behind you if the 10-year-old needs a break. Watch 45–60 minutes. Free. Paid grandstand seats exist; you don't need them.</p>
+      <div class="warn">⚠️ If you're running late, don't chase it up the route — carry on to Heian Shrine (Tozai Line to Higashiyama), where the parade arrives from ~14:30 and keeps arriving for a good while after.<br>☔ Rain contingency: postponed to 23 October — fine, you're still in Kyoto.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">14:45</span> 🥢 Nishiki Market <span class="new">NEW</span></h4>
+      <div class="travel">🚶 10 minutes' walk south from Oike. No train.</div>
+      <p>"Kyoto's Kitchen" — a covered arcade, five blocks long and barely four metres wide, running 400 years. 130+ stalls: pickles, tofu skin, tea, knives, tamagoyaki cooked in front of you, sweets, grilled fish.</p>
+      <p>You said you love food markets. This is the Kyoto one, and now it costs you a ten-minute walk instead of a train.</p>
+      <div class="warn">⚠️ Shops start closing around 17:00–18:00 — this timing is deliberate.<br>⚠️ Shellfish and octopus skewers are everywhere here. Stick to tamagoyaki, pickles, tofu, sweets, tea and grilled kosher fish.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:15</span> 🌊 Kamo River &amp; Pontocho</h4>
+      <div class="travel">🚶 5 minutes east from Nishiki. No train.</div>
+      <p>Walk the riverbank as the light goes, then turn into Pontocho Alley — a narrow lantern-lit lane between the river and Kiyamachi, packed with restaurants.</p>
+    </div>
+
+    <div class="stop">
+      <h4>🍽️ Dinner — Pontocho</h4>
+      <p>Look for <strong>obanzai</strong> (Kyoto home-style small plates, heavily vegetable-based) or a <strong>yudofu</strong> (hot tofu) specialist. Kyoto is the easiest Japanese city for meat-free eating, because of its Buddhist temple-cuisine tradition (shojin ryori).</p>
+      <div class="travel">🚇 Back to the hotel: Karasuma Line from Shijo to Kyoto Station, ~5 mins. Check into hotel androoms Kyoto Shichijo.</div>
+    </div>
+
+    <div class="stop">
+      <h4>🔥 Optional tonight: Kurama Fire Festival</h4>
+      <p>Same night. In the mountain village of Kurama, north of Kyoto. Bonfires lit at 18:00, five-metre pine torches converge on the Sanmon gate around 20:00, portable shrines descend past 22:00. Commemorates the year 970. Free and genuinely spectacular.</p>
+      <div class="warn">⚠️ <strong>Why it's not in the main plan:</strong><br>🚋 Eizan Railway from Demachiyanagi, ~30 mins, on a tiny single-track line that gets overwhelmed<br>⏳ Expect an hour-plus queueing for a train back. Home past midnight<br>🚶 Standing in a cold mountain lane behind barriers with a 10-year-old, after a day that started at 06:30 in Tokyo</div>
+      <p>If your 15-year-old is desperate and one adult takes them, do it. As a family of five on day one in Kyoto, skip it. You've already had the festival.</p>
+    </div>
+  </div></details>
+
+  <!-- FRI 23 -->
+  <details class="acc"><summary><span class="tag t-kyoto">Fri 23 Oct</span><span class="st">🎋 Kyoto — west to east, one direction</span><span class="ss">Arashiyama · Nijo Castle · Kiyomizu-dera · Gion</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 07:30 · out by 08:30 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~35 minutes.</strong> The route runs west → centre → east and never turns round. The whole evening is downhill on foot.</div>
+    <div class="note"><strong>The big efficiency fix:</strong> Arashiyama connects directly to Nijo Castle on the JR Sagano Line — three stops, ten minutes, no going back to Kyoto Station. Most itineraries miss this and waste 40 minutes.</div>
+
+    <div class="stop">
+      <h4><span class="time">08:45</span> 🎍 Arashiyama</h4>
+      <div class="travel">🚃 JR Sagano/San-in Line, Kyoto Station → Saga-Arashiyama. 15 mins, ¥240 (~£1.15). Direct.</div>
+      <div class="warn">⏰ Go early. The bamboo grove after 10:30 is a scrum.</div>
+      <ul class="bul">
+        <li>🎋 <strong>Arashiyama Bamboo Grove</strong> — the path everyone photographs. Short (~500m) and better than the photos suggest, mostly because of the sound. Free</li>
+        <li>🏯 <strong>Tenryu-ji Temple</strong> — UNESCO, 14th century, and the Sogenchi garden is the oldest in Japan surviving in its original form. ~£3 pp</li>
+        <li>🐒 <strong>Iwatayama Monkey Park</strong> — the one for your 10-year-old. A 20-minute uphill walk (a real walk, warn them) to a summit where ~120 wild Japanese macaques roam free. At the top there's a hut where you go inside the cage and the monkeys stay outside — you feed them apple and peanuts through the mesh. Panoramic view over Kyoto. ~£3 pp</li>
+        <li>🌉 <strong>Togetsukyo Bridge</strong> — the "Moon Crossing Bridge" over the Katsura River</li>
+      </ul>
+      <p>🍜 <strong>Lunch in Arashiyama</strong> — soba, tofu and yuba (tofu skin) restaurants along the main street. Very easy for your diet.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">14:15</span> 🏯 Nijo Castle — your castle <span class="new">NEW</span></h4>
+      <div class="travel">🚃 JR Sagano Line, Saga-Arashiyama → Nijo. 3 stops, 10 minutes. Then a 5-minute walk.</div>
+      <p>You asked for castles and shoguns. This is it. Built 1603 as the Kyoto residence of Tokugawa Ieyasu, the first shogun. UNESCO World Heritage.</p>
+      <div class="note">🎵 <strong>The bit they'll remember: the nightingale floors.</strong> The corridors of Ninomaru Palace were deliberately built to chirp like birds when you walk on them — an anti-assassination device. You cannot cross them silently. Let them try.</div>
+      <p>Inside: 33 rooms, 800+ tatami mats, gold-leaf screen paintings by the Kano school. And the room where the last shogun handed power back to the Emperor in 1867 — the end of 700 years of samurai rule, in a room you can stand in.</p>
+      <p>⏰ Open 08:45, last entry ~16:00. <span class="cost">~£6 adult</span> Allow 90 minutes.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:30</span> ⛩️ Kiyomizu-dera</h4>
+      <div class="travel">🚌 Bus or taxi east to Kiyomizu-michi, ~20 mins.</div>
+      <p>The great wooden stage jutting out over the hillside, built in 1633 without a single nail. Views over all of Kyoto. Open to 18:00. <span class="cost">~£2 pp</span></p>
+      <p>💧 <strong>Otowa Waterfall</strong> — three streams, drunk from a long-handled cup: longevity, love, or success. Drinking from all three is considered greedy — pick one.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">17:30</span> 🏮 Walk downhill through old Kyoto <span class="new">NEW</span></h4>
+      <div class="travel">🚶 No more transport today. The rest of the evening is one continuous downhill walk that ends at dinner.</div>
+      <p>Kiyomizu-dera → Sannenzaka → Ninenzaka → Yasaka Pagoda → Yasaka Shrine → Gion → Pontocho.</p>
+      <ul class="bul">
+        <li>🗼 <strong>Yasaka Pagoda (Hokan-ji)</strong> — the five-storey pagoda framed at the end of the lane. The most photographed spot in Kyoto</li>
+        <li>🏮 <strong>Sannenzaka &amp; Ninenzaka</strong> — stone-stepped preserved lanes. Wooden machiya shops, matcha ice cream, tea houses. At dusk with the lanterns coming on, this is the Kyoto in your head</li>
+        <li>⛩️ <strong>Yasaka Shrine</strong> — hundreds of lanterns after dark. Free, open 24h</li>
+        <li>🌸 <strong>Hanamikoji-dori, Gion</strong> — the classic geisha district street</li>
+        <li>🏮 <strong>Shirakawa-minami-dori</strong> — willow trees over a canal, wooden teahouses, stone bridges. The prettiest street in Kyoto and much quieter than Hanamikoji</li>
+      </ul>
+      <div class="warn">⚠️ Superstition: trip on Sannenzaka's steps and you get three years' bad luck. It's genuinely uneven — watch your footing.<br>⚠️ Photography is banned on Gion's private side-alleys and enforced with fines. Stick to the main street.</div>
+    </div>
+
+    <div class="stop">
+      <h4>🍽️ Dinner — your Kyoto blowout</h4>
+      <p>You'll arrive back at Pontocho or Gion on foot. Look for <strong>shojin ryori</strong> (Buddhist temple cuisine — entirely plant-based, refined, a genuine Kyoto specialty) or a tofu kaiseki house. This is the meal to spend on.</p>
+    </div>
+
+    <div class="stop">
+      <h4>🔄 The Kinkaku-ji question — read this before you decide</h4>
+      <p>Kinkaku-ji, the Golden Pavilion, is the one famous Kyoto temple not in this plan, and you asked about doing all the best ones. Here is the honest arithmetic.</p>
+      <p><strong>What you'd gain:</strong> a three-storey pavilion covered in real gold leaf, mirrored in a still pond. It is genuinely one of the most beautiful buildings in Japan and it photographs like nothing else. ¥500, opens 09:00.</p>
+      <p><strong>What it costs you:</strong> Kinkaku-ji sits in the north-west, off every route you're taking today. Slotting it between Arashiyama and Nijo means roughly 50 extra minutes on buses, and it compresses everything after it. The visit itself is short — 30–40 minutes on one fixed path, always packed — because you can't go inside; you look at it from across the water and move on.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Option</th><th>What you do</th><th>What you lose</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A — Add it</strong></td><td>Arashiyama 08:45–12:00 → Kinkaku-ji 13:00–13:45 → Nijo 14:30–16:00 → Kiyomizu 16:45</td><td>Kiyomizu becomes a rushed 45 minutes before it closes at 18:00, and the downhill Gion walk starts in the dark</td></tr>
+          <tr><td><strong>B — Swap it for the monkeys</strong></td><td>Drop Iwatayama Monkey Park, use that time and the shorter Arashiyama for Kinkaku-ji</td><td>The 10-year-old's favourite thing in Kyoto</td></tr>
+        </tbody>
+      </table></div>
+      <div class="note"><strong>My recommendation: don't add it.</strong> You already have Kiyomizu-dera, Fushimi Inari, Tenryu-ji, Sanjusangen-do and Yasaka Shrine across a day and a half — a genuinely strong list, and every one of them you actually walk through rather than look at. Kinkaku-ji is a photograph you queue for. But if one building is worth 50 minutes of buses to you, take Option A and accept that Kiyomizu becomes a quick one. Both are defensible. What doesn't work is trying to have all of it.</div>
+    </div>
+  </div></details>
+
+  <!-- SAT 24 -->
+  <details class="acc"><summary><span class="tag t-move">Sat 24 Oct</span><span class="st">🚄🏊 Fushimi Inari → Tokyo Bay → pool</span><span class="ss">Dawn shrine · Nozomi back · check in · swim</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 06:45 &nbsp;·&nbsp; 🚇 Fushimi Inari is 2 stops and 5 minutes from Kyoto Station — which is where your hotel is. The cheapest, easiest early start of the whole trip.</div>
+
+    <div class="stop">
+      <h4><span class="time">07:20</span> ⛩️ Fushimi Inari Taisha</h4>
+      <div class="travel">🚃 JR Nara Line, Kyoto Station → Inari. 2 stops, 5 minutes, ¥150 (~£0.70).</div>
+      <p>Thousands of vermilion torii gates forming tunnels up Mount Inari. Open 24 hours, free, always.</p>
+      <p>At 07:20 you'll have long stretches almost to yourselves. By 10:00 it's shoulder-to-shoulder. <strong>This one early start buys you the entire experience.</strong></p>
+      <p>⛰️ The full summit hike is 2–3 hours — you don't have that. Walk up to the <strong>Yotsutsuji intersection</strong> (~30–40 mins, a proper climb) for the city view, then come back down. That's the best of it.</p>
+      <div class="note">🦊 The foxes (kitsune) are Inari's messengers. The ones with a key in their mouth guard the rice granary.</div>
+    </div>
+
+    <div class="tl">
+      <div class="tl-row"><div class="tl-t">09:15</div><div class="tl-d">Back at the hotel, breakfast</div></div>
+      <div class="tl-row"><div class="tl-t">10:00</div><div class="tl-d">Check out androoms Kyoto Shichijo · buy ekiben on the platform</div></div>
+      <div class="tl-row"><div class="tl-t">10:30</div><div class="tl-d">🚄 <strong>NOZOMI → TOKYO · book #2</strong></div></div>
+      <div class="tl-row"><div class="tl-t">12:45</div><div class="tl-d">Arrive Tokyo Station</div></div>
+      <div class="tl-row"><div class="tl-t">13:05</div><div class="tl-d">🚶 Keiyo Line platforms</div></div>
+      <div class="tl-row"><div class="tl-t">13:20</div><div class="tl-d">🚃 JR Keiyo Line → Maihama (~15 mins)</div></div>
+      <div class="tl-row"><div class="tl-t">13:40</div><div class="tl-d">🚝 Disney Resort Line or free shuttle → Sheraton</div></div>
+      <div class="tl-row"><div class="tl-t">14:00</div><div class="tl-d">Arrive, store bags</div></div>
+    </div>
+
+    <div class="warn">⚠️ <strong>CRITICAL — THE KEIYO LINE WALK.</strong> The Keiyo Line platforms are NOT near the Shinkansen platforms at Tokyo Station. They are a genuine 12–20 minute underground walk — down escalators, along a very long corridor, down more escalators. Everyone gets caught out. <strong>Allow 20 minutes, not 5.</strong> Follow the red 京葉線 / Keiyo Line signs relentlessly.</div>
+    <p>At Maihama, the Disney Resort Line monorail to Bayside Station puts you 2 minutes from the Sheraton. Free hotel shuttles also run.</p>
+
+    <div class="stop">
+      <h4><span class="time">14:00</span> 🍽️ Lunch at Ikspiari</h4>
+      <p>The shopping and dining complex at Maihama Station.</p>
+    </div>
+
+    <div class="stop"><h4><span class="time">15:00</span> 🏨 Check in — Sheraton Grande Tokyo Bay</h4></div>
+
+    <div class="stop">
+      <h4><span class="time">15:30</span> 🏊 The pool</h4>
+      <p>25 metres, five lanes, heated, indoor, <strong>free for hotel guests</strong>. Jacuzzi and children's pool too. Towels provided. Ground floor of the adjacent Oasis building. 15:30–17:30.</p>
+      <p><strong>Why it's today and not later:</strong></p>
+      <ul class="bul">
+        <li>❌ Tue 27 (departure day): your airport bus leaves 09:08, the pool opens 10:00. Impossible</li>
+        <li>❌ Sun 25 evening: you'll be in Disneyland until close; the pool shuts 20:00</li>
+        <li>✅ Today: three hours where nobody has to walk anywhere, after eight days on your feet and before two Disney days</li>
+      </ul>
+      <div class="warn">⚠️ The outdoor Garden Pool closed on 30 September (it runs 1 June–30 Sept only). Public baths and sauna are extra; indoor pool and gym are free.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">18:30</span> 🍽️ Dinner</h4>
+      <p><strong>Grand Café</strong> at the hotel does a large international buffet — the easiest possible option for five people with dietary restrictions, since you can see everything.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">20:30</span> 🎯 Disney briefing</h4>
+      <p>Read <a href="#disney">the Disney section</a> out loud, together, tonight. Assign roles. Bed by 21:30. Tomorrow is a 05:00 start.</p>
+    </div>
+  </div></details>
+
+  <!-- SUN 25 / MON 26 -->
+  <details class="acc"><summary><span class="tag t-disney">Sun 25 Oct</span><span class="st">🎢 Tokyo Disneyland</span><span class="ss">Already paid · res. A00616088683</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 05:00 up · 05:45 leave · 06:15 at the gates. The hotel is minutes away — this is the one place where being at a Disney hotel really pays.</div>
+    <h4>🎯 Premier Access order</h4>
+    <ol class="num">
+      <li><strong>Enchanted Tale of Beauty and the Beast</strong> — the headliner, ~£9.50 pp. Buy first</li>
+      <li><strong>Baymax Happy Ride</strong></li>
+      <li><strong>Pooh's Hunny Hunt</strong> — trackless ride system, unique to Tokyo</li>
+    </ol>
+    <h4>🎃 No pass needed</h4>
+    <ul class="bul">
+      <li>👻 <strong>Haunted Mansion "Holiday Nightmare"</strong> — the Nightmare Before Christmas overlay, 15 Sept 2026 – 7 Jan 2027. Ride it early</li>
+      <li>🏰 Cinderella Castle</li>
+      <li>🌊 Splash Mountain · Big Thunder Mountain · Space Mountain</li>
+      <li>🎪 <strong>The Villains' Halloween "Into the Frenzy"</strong> — once daily, ~45 mins. Free standing; DPA is ~£17 pp. Sit on the ground 45 minutes early and save £85</li>
+      <li>🎆 <strong>Night High Halloween</strong> — nightly Halloween fireworks over the castle</li>
+    </ul>
+    <div class="note">Full tactics, pricing and the morning protocol: <a href="#disney">the Disney brief</a>.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="tag t-disney">Mon 26 Oct</span><span class="st">🌊 Tokyo DisneySea — the better park</span><span class="ss">Already paid · res. A00616088973</span></summary>
+  <div class="acc-body">
+    <p>Unique to Tokyo and widely rated the best Disney park on earth.</p>
+    <h4>❄️ Fantasy Springs</h4>
+    <p>Since April 2025 you can walk into Fantasy Springs freely and queue standby — the old entry restrictions are gone. ✅ Your existing ticket covers it. But standby for the big three hits 2–3 hours at peak. So:</p>
+    <h4>🎯 DPA order — exactly this, at 08:00</h4>
+    <ol class="num">
+      <li>❄️ <strong>Anna and Elsa's Frozen Journey</strong> — sells out first, often before 09:00</li>
+      <li>🏮 <strong>Rapunzel's Lantern Festival</strong></li>
+      <li>🧚 <strong>Peter Pan's Never Land Adventure</strong> — lasts longest, buy last</li>
+    </ol>
+    <p>🧚‍♀️ <strong>Fairy Tinker Bell's Busy Buggies</strong> — not sold via DPA, free Standby Pass only.</p>
+    <h4>🌋 The rest</h4>
+    <ul class="bul">
+      <li><strong>Journey to the Center of the Earth</strong> — inside Mount Prometheus. DPA-worthy</li>
+      <li><strong>Soaring: Fantastic Flight</strong> — DPA-worthy</li>
+      <li><strong>Tower of Terror · Toy Story Mania!</strong></li>
+      <li>💀 <strong>Lazos de la Familia</strong> — the Coco celebration in Lost River Delta, 16 Sept – 2 Nov. Miguel does a two-look greeting: Land of the Living in the mornings, Land of the Dead in the afternoons. Less crowded than the headliners</li>
+      <li>🚢 <strong>Just walk around.</strong> The Mediterranean Harbor at dusk is worth an hour of doing nothing</li>
+    </ul>
+    <div class="note">Full tactics, pricing and the morning protocol: <a href="#disney">the Disney brief</a>.</div>
+  </div></details>
+
+  <!-- TUE 27 -->
+  <details class="acc"><summary><span class="tag t-move">Tue 27 Oct</span><span class="st">🛫 Tokyo Bay → Seoul</span><span class="ss">Limousine bus · KE704 · AREX</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 07:00</div>
+    <div class="tl">
+      <div class="tl-row"><div class="tl-t">07:00</div><div class="tl-d">Breakfast at the hotel</div></div>
+      <div class="tl-row"><div class="tl-t">08:30</div><div class="tl-d">Check out, bags to the lobby</div></div>
+      <div class="tl-row"><div class="tl-t">09:08</div><div class="tl-d">🚌 <strong>Limousine Bus</strong> from the Sheraton 1st-floor entrance · book #3</div></div>
+      <div class="tl-row"><div class="tl-t">10:35</div><div class="tl-d">Narita Terminal 1</div></div>
+      <div class="tl-row"><div class="tl-t">10:45</div><div class="tl-d">✅ Korean Air check-in: T1, <strong>NORTH WING</strong>, 4th floor</div></div>
+      <div class="tl-row"><div class="tl-t">12:00</div><div class="tl-d">Security, lunch airside</div></div>
+      <div class="tl-row"><div class="tl-t">14:00</div><div class="tl-d">✈️ KE704 → ICN</div></div>
+      <div class="tl-row"><div class="tl-t">16:40</div><div class="tl-d">Land Incheon</div></div>
+    </div>
+    <p>🚌 ¥2,900 adult / ¥1,450 child ≈ <span class="cost">£60 family</span> Picks up at the hotel's own front entrance — no walking with cases. 10:35 arrival is 3h25 before departure.</p>
+    <p>🔁 More cushion: 08:28 → T1 09:55. Less: 09:57 → T1 11:20 (2h40 — doable, wouldn't).</p>
+    <div class="note">🏊 No pool this morning — it opens 10:00, you're gone by 09:10. Which is why the swim was Saturday.</div>
+
+    <div class="stop">
+      <h4>🇰🇷 Arriving</h4>
+      <div class="ok">✅ e-Arrival Card already filed — all five of you. No K-ETA needed for UK passports.</div>
+      <h4><span class="time">~17:45</span> 🚄 AREX to Seoul</h4>
+      <p>Korean Air lands at Incheon Terminal 2.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Service</th><th>Time</th><th class="num">Cost pp</th></tr></thead>
+        <tbody>
+          <tr><td><strong>AREX Express</strong> (orange, non-stop, reserved seats, luggage racks)</td><td>51 mins</td><td class="num">₩13,000 (~£7)</td></tr>
+          <tr><td>AREX All-Stop (blue, commuter)</td><td>66 mins</td><td class="num">₩5,000 (£2.70)</td></tr>
+        </tbody>
+      </table></div>
+      <p>Take the Express — ~£35 total for assigned seats after a flight. Ticket machines at T2, B1, Transportation Center.</p>
+      <p><strong>~18:50 — Seoul Station.</strong> 🚶 ENA Suite Namdaemun is a short walk or quick taxi.</p>
+    </div>
+
+    <div class="stop">
+      <h4>🍽️ Dinner</h4>
+      <p>You're in Namdaemun, Korea's oldest market district — the food alleys run into the evening. Or a convenience store (GS25, CU): Korean konbini food is excellent and tuna kimbap and cheese kimbap are on the shelf in every single one.</p>
+    </div>
+  </div></details>
+
+  <!-- WED 28 -->
+  <details class="acc"><summary><span class="tag t-seoul">Wed 28 Oct</span><span class="st">👘 Old Seoul, on foot</span><span class="ss">Gyeongbokgung · Bukchon · Insadong · Gwangjang</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 08:00 · out by 09:00 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~35 minutes</strong> — two metro journeys, one at each end. Everything in between is walking.</div>
+    <p><strong>Why this cluster:</strong> Gyeongbokgung → Bukchon → Insadong → Gwangjang is a continuous chain running east and south. Each step is a 10–15 minute walk from the last.</p>
+    <div class="ok">🎁 <strong>FREE PALACE DAY — a fluke in your favour.</strong> Wednesday 28 October is the last Wednesday of the month = Korea's Culture Day. Gyeongbokgung and most national museums are free to everyone. You save ~£10, and more usefully you skip the ticket queue.</div>
+
+    <div class="stop">
+      <h4><span class="time">09:20</span> 🏯 Gyeongbokgung Palace</h4>
+      <div class="travel">🚇 Seoul Station → Line 1 to Jongno 3-ga → Line 3, two stops to Gyeongbokgung. ~20 mins. Exit 5.</div>
+      <p>The main royal palace of the Joseon dynasty, founded 1395. Enormous — the throne hall, the floating Gyeonghoeru pavilion on its pond, and the pavilion at Hyangwonjeong.</p>
+      <p>💂 Time it for the <strong>Changing of the Royal Guard</strong> at Gwanghwamun Gate — usually 10:00 and 14:00. Drums, banners, full regalia. Free and genuinely impressive.</p>
+      <div class="warn">⚠️ Closed Tuesdays. Wednesday is fine. Sept–Oct: 09:00–18:00, last entry 17:00.</div>
+      <h4>👘 Hanbok — do it</h4>
+      <p>Rent from one of the shops along the palace wall. Anyone in hanbok enters the palaces free. ~£8–15 pp for 2–4 hours, hundreds of styles, and they'll do the kids' hair. Korean visitors do this too — it isn't a tourist-only thing.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">11:30</span> 🏘️ Bukchon Hanok Village</h4>
+      <div class="travel">🚶 15 minutes east. No train.</div>
+      <p>600 years old, ~900 traditional hanok houses on a hillside between two palaces. Roughly 10:00–17:00. Free.</p>
+      <div class="warn">⚠️ People genuinely live here. Stay quiet, don't photograph doorways or enter gates — there are signs and residents get understandably fed up.</div>
+      <p>🖼️ The famous view is from <strong>Bukchon-ro 11-gil</strong>, looking down the alley with the city and Namsan Tower behind.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">13:00</span> 🍚 Insadong + temple food lunch · book #7</h4>
+      <div class="travel">🚶 10 minutes south. No train.</div>
+      <p>Korea's traditional craft street — hanji paper, celadon, tea houses, calligraphy brushes. <strong>Ssamziegil</strong>, a spiral shopping building, is worth 20 minutes.</p>
+      <div class="ok">🥢 <strong>This is your food solution for Korea.</strong> Insadong has the highest concentration of Buddhist temple-food restaurants in Seoul — entirely plant-based, no shellfish, and no fermented shrimp in the kimchi.</div>
+      <div class="tw"><table>
+        <thead><tr><th>Restaurant</th><th>Style</th><th class="num">Price pp</th></tr></thead>
+        <tbody>
+          <tr><td>Osegye Hyang (오세계향)</td><td>Vegan Korean classics — bulgogi, mandu, fried "chicken", japchae</td><td class="num">~£7–12</td></tr>
+          <tr><td>Sanchon</td><td>Temple set menu, 20+ plates, live traditional music</td><td class="num">~£14–27</td></tr>
+          <tr><td>Balwoo Gongyang</td><td>⭐ Michelin-starred, run by the Jogye Order. Books far ahead</td><td class="num">~£22–65</td></tr>
+        </tbody>
+      </table></div>
+      <p>🛕 <strong>Jogyesa Temple</strong> is right there — head temple of Korean Buddhism, free, and in autumn the courtyard is hung with thousands of paper lanterns.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:00</span> 🥟 Gwangjang Market</h4>
+      <div class="travel">🚶 15 minutes east, or Line 1 one stop to Jongno 5-ga.</div>
+      <p>Founded 1905, one of Seoul's oldest markets. Food Alley 09:00–23:00 daily; shop sections 09:00–18:00 and closed Sundays — Wednesday is fine.</p>
+      <h4>🍽️ What's safe</h4>
+      <ul class="bul">
+        <li>🍙 <strong>Mayak gimbap</strong> ("addictive kimbap") — tiny seaweed rice rolls with carrot, radish and spinach, dipped in mustard-soy. The market's signature dish and it's vegetable-only. You'll demolish these</li>
+        <li>🥞 <strong>Bindaetteok</strong> (nokdujeon) — mung bean pancakes, ground and fried in front of you. ⚠️ Ask if there's pork</li>
+        <li>🍜 <strong>Kalguksu</strong> — hand-cut knife noodles. ⚠️ Ask about the broth (anchovy fine, beef not)</li>
+        <li>🥬 <strong>Japchae</strong> — sweet potato glass noodles with vegetables</li>
+      </ul>
+      <div class="warn">⚠️ Cash. ⚠️ Ask about the kimchi.</div>
+      <div class="travel">🚇 Home: Jongno 5-ga → Seoul Station, Line 1, ~10 mins.</div>
+    </div>
+  </div></details>
+
+  <!-- THU 29 -->
+  <details class="acc"><summary><span class="tag t-seoul">Thu 29 Oct</span><span class="st">🏙️ Modern Seoul · centre → west</span><span class="ss">Ikseon-dong · Euljiro · DDP · Hongdae</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 08:00 · out by 09:00 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~46 minutes</strong> — the most efficient day in Seoul. Four journeys, and the last one gets you home in seven minutes.</div>
+    <p>All modern city, no theme parks, no day trips — exactly as asked. The route runs centre → east → west and ends seven minutes from your hotel on the AREX.</p>
+
+    <div class="stop">
+      <h4><span class="time">09:45</span> ☕ Ikseon-dong</h4>
+      <div class="travel">🚇 Seoul Station → Line 1 to Jongno 3-ga. 10 minutes.</div>
+      <p>A 100-year-old hanok neighbourhood — the alleys are barely a metre wide — that's been taken over by independent cafés, cocktail bars, vintage shops and tiny restaurants, without knocking anything down. You walk through traditional courtyard houses that are now espresso bars and concept stores.</p>
+      <p>It's the most photogenic thing in central Seoul and it takes about 90 minutes to wander properly. Get lost in it on purpose.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">11:30</span> 🔧 Euljiro — "Hipjiro"</h4>
+      <div class="travel">🚶 10 minutes south. No train.</div>
+      <p>Seoul's old printing and lighting-supply district — metal workshops, tool shops, hardware stalls at street level. Over the last decade the upper floors and back rooms have filled with cafés and bars that deliberately kept the industrial shell: peeling paint, exposed wiring, no signage.</p>
+      <p>The nickname is a pun — "hip" + "Euljiro". Half the places are genuinely unmarked; you find them by following people up a staircase.</p>
+      <p>🍽️ <strong>Lunch here.</strong> Plenty of noodle houses and modern cafés with visible menus.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">14:00</span> 🛸 Dongdaemun Design Plaza (DDP)</h4>
+      <div class="travel">🚇 Line 2, Euljiro 3-ga → Dongdaemun History &amp; Culture Park. 2 stops, 4 minutes.</div>
+      <p>Zaha Hadid's silver spaceship — 45,000 curved aluminium panels and not a single straight line in the building. It looks like it landed. Free to walk around.</p>
+      <ul class="bul">
+        <li>🏛️ <strong>Exhibition halls</strong> inside — often free, rotating design and fashion shows</li>
+        <li>🏟️ <strong>Dongdaemun Stadium Memorial</strong> and the excavated Igansumun floodgate — the old Seoul city wall, right underneath the new building</li>
+        <li>🛍️ <strong>Dongdaemun shopping towers</strong> (Doota, Migliore, apM) next door — enormous fashion malls that stay open until 05:00. Half an hour is an experience</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:15</span> 🎸 Hongdae</h4>
+      <div class="travel">🚇 Line 2 direct, Dongdaemun History &amp; Culture Park → Hongik Univ. 25 minutes, one train, no changes.</div>
+      <p>The university district and the youth-culture centre of Seoul.</p>
+      <ul class="bul">
+        <li>🛍️ <strong>Hongdae Walking Street</strong> (Eoulmadang-ro) — streetwear, K-pop merch, cosmetics</li>
+        <li>🕹️ <strong>Arcades and claw-machine halls</strong> — dozens, on almost every block</li>
+        <li>🐱 <strong>Character and theme cafés</strong> — the highest density in Seoul</li>
+        <li>💍 <strong>Make-your-own accessory workshops</strong> — ring-making, silver stamping. Walk-in, popular with teenagers, ~£20–30</li>
+        <li>🌳 <strong>Yeonnam-dong</strong> — 10 minutes west along the Gyeongui Line Forest Park, an old railway line turned into a linear park. Quieter, café-dense, lovely in autumn</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">17:30</span> 🎤 Hongdae busking</h4>
+      <p>This is the reason to be here in the evening. From around 17:00 the main walking street fills with buskers — K-pop dance crews, singers, beatboxers, full bands. Crowds form circles in the street. Free, genuinely good, and it runs late.</p>
+      <p>This will be your teenagers' favourite hour in Korea. Stand and watch a couple of acts properly rather than walking past.</p>
+    </div>
+
+    <div class="stop">
+      <h4>🍽️ Dinner in Hongdae</h4>
+      <p>Loads of options and it's the most foreigner-friendly eating area in Seoul. ⚠️ Standard rules — ask about broth and kimchi.</p>
+      <div class="travel">🚇 Home: Hongik Univ → Seoul Station on the AREX all-stop line. <strong>7 minutes.</strong> <span class="new">NEW</span> This is why Hongdae is last — it's the closest major district to your hotel by train, so the latest and most tired journey of the day is also the shortest.</div>
+    </div>
+
+    <div class="stop">
+      <h4>🔄 One trade-off, honestly</h4>
+      <p>DDP is at its best after dark, when the building is lit and the LED Rose Garden comes on — and the DDP Night Market runs Thursdays 19:00–midnight. Doing DDP in the afternoon means you miss both.</p>
+      <p>The alternative is to flip it: Hongdae 14:00–17:30, then Line 2 back east to DDP for 18:30 and the night market. I've chosen the version you have because it keeps the Hongdae busking, and because the flipped version ends your evening 25 minutes from the hotel instead of 7. But the swap is clean if you'd rather have the night market.</p>
+    </div>
+  </div></details>
+
+  <!-- FRI 30 -->
+  <details class="acc"><summary><span class="tag t-seoul">Fri 30 Oct</span><span class="st">🌇 Modern Seoul · east → south</span><span class="ss">Seongsu · COEX · Seoul Sky · Banpo</span></summary>
+  <div class="acc-body">
+    <div class="travel">🌅 Wake 08:00 · out by 09:00 &nbsp;·&nbsp; 🚇 <strong>Total travel today: ~80 minutes</strong>, and the first three legs are all Line 2 in the same direction.</div>
+    <p><strong>Why this cluster:</strong> Seongsu, COEX and Lotte World Tower are all on Line 2 in a row. Seongsu → Samseong is 7 stops; Samseong → Jamsil is 2 stops back. Nothing here is a detour.</p>
+
+    <div class="stop">
+      <h4><span class="time">09:40</span> 🧱 Seongsu-dong · "the Brooklyn of Seoul"</h4>
+      <div class="travel">🚇 Seoul Station → Line 1 to City Hall → Line 2 to Seongsu. ~30 mins.</div>
+      <p>Seongsu was Seoul's shoe-manufacturing district — rows of red-brick factories and warehouses. Over the last decade it's become the most interesting neighbourhood in the city: the factories are still standing, but they're now flagship stores, roasteries, galleries and enormous concept cafés with the brickwork and steel beams left exposed.</p>
+      <ul class="bul">
+        <li>☕ <strong>Daelim Changgo</strong> — the famous one. A converted rice warehouse, now a vast café-gallery with the original industrial shell intact</li>
+        <li>🛍️ <strong>Flagship and pop-up stores</strong> — Seongsu is where Korean brands launch things. There is almost always a temporary installation running that wasn't there a month ago</li>
+        <li>👟 <strong>Seongsu Handmade Shoe Street</strong> — the district's original trade, still working</li>
+        <li>🌳 <strong>Seoul Forest</strong> — one stop away if you want green space and a deer enclosure. Good 10-year-old release valve</li>
+        <li>📸 The teenagers will have seen this area on TikTok</li>
+      </ul>
+      <p><strong>12:30 — 🍽️ Lunch in Seongsu.</strong> Café and brunch culture here is excellent and much more Western-facing than most of Seoul — which makes it easy for your diet. Bakeries, bowls, pasta. English menus are common.</p>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">14:00</span> 📚 Starfield Library · COEX</h4>
+      <div class="travel">🚇 Line 2 direct, Seongsu → Samseong. 7 stops, ~18 minutes, one train.</div>
+      <p>13-metre-high bookshelves, around 85,000 books, in a vast open atrium in the middle of Asia's largest underground shopping mall. It's free, open to anyone, and it looks like a library from a science-fiction film.</p>
+      <p>Also in COEX:</p>
+      <ul class="bul">
+        <li>🎤 <strong>SMTOWN COEX Artium</strong> — the K-pop building. Merch, artist exhibits, a museum floor. Required if anyone follows K-pop</li>
+        <li>🐧 <strong>COEX Aquarium</strong> — large, indoor, good for the 10-year-old. ~£17 pp</li>
+        <li>🕺 <strong>Gangnam Style statue</strong> — two giant bronze hands doing the dance, at the COEX exit</li>
+        <li>🛍️ The mall is enormous and has everything</li>
+      </ul>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">16:15</span> 🏙️ Lotte World Tower</h4>
+      <div class="travel">🚇 Line 2, Samseong → Jamsil. 2 stops, 5 minutes. Exit 1 or 2 — the tower is unmissable.</div>
+      <p>Only 5 minutes, because COEX and the tower are practically neighbours on the same line. This was the whole reason for today's ordering.</p>
+      <h4><span class="time">16:45</span> 🌆 Seoul Sky · book #4</h4>
+      <p>555 metres. 123 floors. The world's fifth-tallest building. The observatory occupies floors 117–123 and has a glass-floored Sky Deck at 478m — you stand on it and look straight down. The lift is one of the fastest on earth.</p>
+      <p>⏰ Friday hours 10:30–23:00, last ticketing one hour before close. 💷 ₩31,000 adult (13+) / ₩27,000 child (3–12) ≈ £17 / £15. <span class="cost">Family ≈ £83 at the door, ~£73 online</span></p>
+      <div class="note">🌅 Sunset in Seoul on 30 October is around 17:30. A 16:45 entry gives you daylight, sunset and the full night city in one visit. This is the best hour of the Seoul leg — book the slot deliberately.</div>
+    </div>
+
+    <div class="stop">
+      <h4><span class="time">18:45</span> 🌈 Banpo Bridge Moonlight Rainbow Fountain</h4>
+      <div class="travel">🚇 Jamsil → Line 2 to Gyodae → Line 3 one stop to Express Bus Terminal. ~30 mins. Then a 15–20 minute walk down to Banpo Hangang Park.</div>
+      <p>The world's longest bridge fountain — 1,140 metres, 380 jets, 200 lights, water arcing off both sides of Banpo Bridge into the Han River in time to music. Free.</p>
+      <p>⏰ Shows at 19:30, 20:00, 20:30, 21:00 — 20 minutes each. The season runs to 31 October, so you are catching it in its final two days.</p>
+      <div class="warn">⚠️ Cancelled in rain or if wind exceeds 7 m/s. Check before you make the trip — if it's blowing, skip it.</div>
+      <p>📍 Best viewing: Banpo Hangang Park, Moonlight Square (Sebitseom), or from Jamsu Bridge.</p>
+      <p><strong>~20:30 — 🚇 Home.</strong> Express Bus Terminal → Line 3 → Line 4 to Seoul Station. Or a taxi (~£8–12 for five, and honestly worth it tonight).</p>
+    </div>
+
+    <div class="stop">
+      <h4>🔄 The easy alternative</h4>
+      <p>If Banpo feels like too much before a 05:15 alarm — fair call, it's a 20-minute walk each way — come straight back from Jamsil after Seoul Sky and spend the last evening in <strong>Myeongdong</strong>, one stop from your hotel. Last shopping, street food, bed by 21:30.</p>
+      <div class="note"><strong>My call: do Banpo.</strong> Ninety minutes of extra effort for the best free spectacle in Seoul, on one of the last nights it runs.</div>
+      <p>🧳 <strong>Pack everything tonight.</strong></p>
+    </div>
+  </div></details>
+
+  <!-- SAT 31 -->
+  <details class="acc"><summary><span class="tag t-move">Sat 31 Oct</span><span class="st">🛬 Halloween, homeward</span><span class="ss">05:15 alarm · AREX · KE907 · land 16:30</span></summary>
+  <div class="acc-body">
+    <div class="tl">
+      <div class="tl-row"><div class="tl-t">05:15</div><div class="tl-d">Up</div></div>
+      <div class="tl-row"><div class="tl-t">05:45</div><div class="tl-d">Check out ENA Suite</div></div>
+      <div class="tl-row"><div class="tl-t">05:55</div><div class="tl-d">🚶 Walk or short taxi to Seoul Station</div></div>
+      <div class="tl-row"><div class="tl-t">06:00</div><div class="tl-d">🚄 AREX Express (or 06:45)</div></div>
+      <div class="tl-row"><div class="tl-t">06:51</div><div class="tl-d">Incheon Terminal 2 ✅</div></div>
+      <div class="tl-row"><div class="tl-t">07:00</div><div class="tl-d">Korean Air check-in, Terminal 2</div></div>
+      <div class="tl-row"><div class="tl-t">10:40</div><div class="tl-d">✈️ KE907 → LHR</div></div>
+      <div class="tl-row"><div class="tl-t">16:30</div><div class="tl-d">🇬🇧 Land Heathrow</div></div>
+    </div>
+    <p>🚄 AREX Express, Seoul Station 06:00 → T1 06:43 → T2 06:51 — 3h49 before departure. There's a 06:45 service arriving T2 at 07:36 if you'd rather have 45 more minutes in bed. I'd take the 06:00 and have a relaxed breakfast at Incheon, which is a genuinely nice airport.</p>
+    <div class="warn">⚠️ Korean Air departs from Incheon <strong>TERMINAL 2</strong> — the reverse of Narita, where they use Terminal 1.</div>
+    <div class="note">🎃 You fly home on Halloween and land at 16:30. Back in time for trick-or-treaters.</div>
+  </div></details>
+
+  </div>
+</section>
+
+<!-- ═══════════ DISNEY ═══════════ -->
+<section class="sec" id="disney">
+  <div class="sec-head"><h2>🏰 The Disney brief</h2></div>
+  <div class="rule"></div>
+  <p class="sec-sub">Sun 25 Oct — Disneyland · Mon 26 Oct — DisneySea. Read this out loud on the Saturday night and assign roles.</p>
+
+  <div class="alarm">
+    🚨 <strong>THE MOST IMPORTANT THING: Tokyo Disney's free line-skip system ended on 31 August 2026.</strong><br>
+    The free 40th Anniversary Priority Pass has been discontinued. The only way to skip a line now is paid <strong>Disney Premier Access (DPA)</strong>.
+  </div>
+
+  <div class="tools" style="margin-top:16px">
+    <button class="tbtn" data-open="dz">Open all</button>
+    <button class="tbtn" data-close="dz">Close all</button>
+  </div>
+
+  <div data-grp="dz">
+  <details class="acc" open><summary><span class="st">💷 Premier Access — the numbers</span><span class="ss">Per person, per ride. Budget ~£280–330 across both days</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th>Tier</th><th class="num">Yen</th><th class="num">£ per person, per ride</th></tr></thead>
+      <tbody>
+        <tr><td>Classic attractions</td><td class="num">¥1,500</td><td class="num">~£7</td></tr>
+        <tr><td>Headliners &amp; Fantasy Springs</td><td class="num">¥2,000–2,500</td><td class="num">~£9.50–12</td></tr>
+        <tr><td>Villains' Halloween parade</td><td class="num">¥3,500</td><td class="num">~£17</td></tr>
+      </tbody>
+    </table></div>
+    <div class="warn">⚠️ <strong>Per person, per ride.</strong> One purchase does not cover the family. Five of you on Frozen Journey = five separate purchases ≈ £48.</div>
+    <p>📊 Realistic budget: 3 DPAs each per day × 5 people × 2 days ≈ <strong>£280–330 total</strong>.</p>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">⏰ The morning protocol</span><span class="ss">05:00 up · 05:45 leave · 06:15 at the gates</span></summary>
+  <div class="acc-body">
+    <p>The hotel is minutes away — this is the one place where being at a Disney hotel really pays. <strong>Rope drop is worth more than any pass you can buy.</strong></p>
+    <p>The second your ticket scans:</p>
+    <ul class="bul">
+      <li>📱 <strong>Person A</strong> → Disney Premier Access → buy immediately</li>
+      <li>📱 <strong>Person B</strong> → Standby Pass (free) → grab one</li>
+      <li>You can hold a DPA and a Standby Pass at the same time</li>
+      <li>Next DPA in 60 minutes; next Standby Pass in 2 hours</li>
+      <li>🔄 Pull down to refresh all day — inventory gets released back</li>
+    </ul>
+    <div class="warn">⚠️ Nothing can be booked before your ticket is physically scanned at the gate. Link all 5 tickets to one account beforehand so one person can buy for everyone.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🎃 The Halloween bonus</span><span class="ss">Your dates fall inside the full-costume window</span></summary>
+  <div class="acc-body">
+    <p>Tokyo Disney permits full character costumes for guests 12 and over on <strong>15–30 September and 16–31 October 2026</strong>. There's a blackout 1–15 October — you're on the 25th and 26th. <strong>You're inside it.</strong></p>
+    <ul class="bul">
+      <li>👶 Under-11s can wear costumes any time of year — your 10-year-old was always fine</li>
+      <li>🧑 Your 15 and 13-year-old and both adults can too — because of your dates</li>
+      <li>⚠️ Must be Disney, Pixar, Star Wars or Marvel. No full-face masks</li>
+      <li>👗 No changing facilities in the parks. A paid, reservation-required changing space at Ikspiari Cinema Area 1F is planned. Easiest: dress at the Sheraton and take the monorail in</li>
+      <li>🛍️ Or just buy ears and a Halloween t-shirt on the day</li>
+    </ul>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🍽️ Eating at Disney with your diet</span><span class="ss">Honest answer: it's hard</span></summary>
+  <div class="acc-body">
+    <p>Park food is heavily meat-based.</p>
+    <ul class="bul">
+      <li>🍞 <strong>Sweetheart Cafe</strong> (Disneyland) — sandwiches, Halloween specials</li>
+      <li>🍿 <strong>The flavoured popcorn carts</strong> — dozens of flavours, all safe. Buy a souvenir bucket</li>
+      <li>🥤 Churros, ice cream, snacks</li>
+      <li>📦 <strong>Bring food in.</strong> Tokyo Disney permits outside food (no alcohol, no glass, no large coolers). This is what I'd do</li>
+    </ul>
+  </div></details>
+  </div>
+</section>
+
+<!-- ═══════════ FOOD ═══════════ -->
+<section class="sec" id="food">
+  <div class="sec-head"><h2>🍣 The food rules</h2></div>
+  <div class="rule"></div>
+  <p class="sec-sub">Certified kosher for anything meaty · fish and veg at normal restaurants · no shellfish · no meat on the plate.</p>
+
+  <details class="acc" open><summary><span class="st">✅ Kosher fish (fins + scales) — yes</span><span class="ss">Safe to order anywhere</span></summary>
+  <div class="acc-body">
+    <p>🐟 <strong>Maguro</strong> (tuna) · <strong>Sake</strong> (salmon) · <strong>Hamachi/Buri</strong> (yellowtail) · <strong>Tai</strong> (sea bream) · <strong>Saba</strong> (mackerel) · <strong>Iwashi</strong> (sardine) · <strong>Hirame</strong> (flounder) · Cod · Herring</p>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">❌ Not kosher — despite being "fish"</span><span class="ss">The eel one catches everyone out</span></summary>
+  <div class="acc-body">
+    <div class="warn">🚫 <strong>Unagi &amp; Anago (eel)</strong> — no scales. Catches everyone out; unagi is everywhere in Japan.<br>🚫 Ankou (monkfish) · Shark · Ray · Catfish</div>
+    <h4>❌ Shellfish</h4>
+    <p>🚫 Ebi (prawn) · Kani (crab) · Tako (octopus) · Ika (squid) · Hotate (scallop) · Uni (sea urchin) · Asari/Hamaguri (clams)</p>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">⚠️ Three hidden traps</span><span class="ss">Ramen broth · dashi · kimchi</span></summary>
+  <div class="acc-body">
+    <p><strong>1. 🍜 Ramen broth.</strong> Almost all tonkotsu is pork bone; shoyu and shio are often chicken. Ask for vegetarian ramen. Chabad Tokyo warns Japanese "vegetarian" is loosely defined — noodles often sit in dashi and bread is sometimes made with lard.</p>
+    <p><strong>2. 🐟 Dashi and katsuobushi are fine.</strong> Bonito stock is fish, permitted under your rules. Miso soup is generally fine.</p>
+    <p><strong>3. 🌶️ KIMCHI — the big one for Korea.</strong> Standard kimchi contains <em>jeotgal</em>, fermented salted shrimp — shellfish. It's in most restaurant kimchi and most kimchi jjigae. Temple food kimchi is fully vegan and safe.</p>
+    <div class="note">Ask: <strong>"새우젓 들어갔어요?"</strong> (sae-u-jeot deu-reo-ga-sseo-yo?) — "does it have salted shrimp?"<br>The single thing to stay alert to in Korea. Learn that one phrase and you're fine.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🍽️ Where you'll actually eat</span><span class="ss">The reliable options, country by country</span></summary>
+  <div class="acc-body">
+    <h4>🇯🇵 Japan</h4>
+    <ul class="bul">
+      <li><strong>Kaiten-zushi</strong> (conveyor belt) — you see exactly what you're taking. Uobei, Genki Sushi</li>
+      <li><strong>David's Deli, Tokyo</strong> — the only kosher restaurant in the city. Kosher ramen, yakitori, falafel</li>
+      <li><strong>Kyoto shojin ryori</strong> — Buddhist temple cuisine, entirely plant-based and a genuine local specialty</li>
+      <li><strong>Markets</strong> — tamagoyaki, tuna donburi, inari-zushi, melon pan, daifuku</li>
+    </ul>
+    <h4>🇰🇷 Korea</h4>
+    <ul class="bul">
+      <li><strong>Insadong temple food</strong> — Osegye Hyang, Sanchon, Balwoo Gongyang. The real answer for Korea</li>
+      <li><strong>Chabad Korea, Hannam-dong</strong> — kosher restaurant, shop and delivery. Go once and stock up</li>
+      <li><strong>Gwangjang mayak gimbap</strong> — vegetable-only, and you'll demolish them</li>
+      <li><strong>Any GS25 or CU</strong> — tuna kimbap and cheese kimbap on the shelf everywhere</li>
+    </ul>
+    <div class="ok">Korea is harder than Japan and I won't pretend otherwise. But temple cuisine isn't a compromise — it's a 1,500-year-old refined tradition, and Insadong has the best concentration of it in the country. Between that, kimbap on every corner, Gwangjang's vegetable mayak gimbap and Chabad as a backstop, you will eat very well.</div>
+  </div></details>
+</section>
+
+<!-- ═══════════ EXTRAS ═══════════ -->
+<section class="sec" id="extras">
+  <div class="sec-head"><h2>📎 Money, temples &amp; the honest notes</h2></div>
+  <div class="rule"></div>
+
+  <details class="acc"><summary><span class="st">💷 Money</span><span class="ss">Japan is 85–90% card · Korea more so · both have cash-only markets</span></summary>
+  <div class="acc-body">
+    <h4>🇯🇵 Japan — mostly card, but not entirely</h4>
+    <p>Contactless Visa/Mastercard plus a Suica covers 85–90% — all trains, every konbini, most restaurants and hotels. The other 10–15% is small family-run restaurants, temples, market stalls (Tsukiji is cash-heavy) and vending machines.</p>
+    <ul class="bul">
+      <li>💴 Carry <strong>¥15,000–20,000 (~£70–95) per adult</strong></li>
+      <li>🏧 Top up at 7-Eleven or Japan Post ATMs — they take foreign cards and beat the exchange desks</li>
+      <li>🚫 Don't change money at the airport counter</li>
+    </ul>
+    <h4>🇰🇷 Korea — even more cashless</h4>
+    <p>Card works almost everywhere including buses and taxis. Except traditional markets — Gwangjang is largely cash. Carry <strong>₩50,000–100,000 (~£27–55)</strong> on market days.</p>
+    <div class="note">📊 Rates used (5 Sept 2026): £1 ≈ ¥211 · £1 ≈ ₩1,830. The yen swung ¥209–217 in the last month — treat costs as ±5%.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">📊 Travel efficiency — at a glance</span><span class="ss">Why each day is built the way it is</span></summary>
+  <div class="acc-body">
+    <div class="tw"><table>
+      <thead><tr><th>Day</th><th>Cluster</th><th>Travel time</th><th>Trains</th></tr></thead>
+      <tbody>
+        <tr><td>Sun 18</td><td>North-east loop</td><td>~40 min</td><td>Ginza / Asakusa lines only</td></tr>
+        <tr><td>Mon 19</td><td>West line</td><td>~55 min</td><td>Mostly walking; Shibuya Sky adds zero travel</td></tr>
+        <tr><td>Tue 20</td><td>Bay line</td><td>~50 min</td><td>One-directional, no backtrack; two markets, both on foot from teamLab</td></tr>
+        <tr><td>Wed 21</td><td>Central ring</td><td>~25 min</td><td>2 walkable stops, 2 short hops; Kanda Myojin on foot</td></tr>
+        <tr><td>Thu 22</td><td>Kyoto centre</td><td>~15 min (after arrival)</td><td>Sanjusangen-do + everything after the parade on foot</td></tr>
+        <tr><td>Fri 23</td><td>Kyoto W→E</td><td>~35 min</td><td>Evening is one downhill walk</td></tr>
+        <tr><td>Sat 24</td><td>Transfer day</td><td>—</td><td>Fushimi Inari, 2 stops from Kyoto Station</td></tr>
+        <tr><td>Wed 28</td><td>Old Seoul</td><td>~35 min</td><td>2 journeys, rest on foot</td></tr>
+        <tr><td>Thu 29</td><td>Modern centre→west</td><td>~46 min</td><td>Ends 7 min from hotel</td></tr>
+        <tr><td>Fri 30</td><td>Modern east→south</td><td>~80 min</td><td>3 legs all on Line 2</td></tr>
+      </tbody>
+    </table></div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">⛩️ Are we doing all the best temples?</span><span class="ss">Twelve of them, across four cities — the full ledger</span></summary>
+  <div class="acc-body">
+    <h4>✅ In the plan</h4>
+    <div class="tw"><table>
+      <thead><tr><th>Temple / Shrine</th><th>Where</th><th>Why it's on the list</th></tr></thead>
+      <tbody>
+        <tr><td>Senso-ji</td><td>Tokyo, Sun 18</td><td>Tokyo's oldest temple, 645 AD. The single most visited religious site in the world</td></tr>
+        <tr><td>Meiji Jingu</td><td>Tokyo, Mon 19</td><td>Tokyo's greatest shrine — 175 acres of hand-planted forest</td></tr>
+        <tr><td>Kanda Myojin <span class="new">NEW</span></td><td>Tokyo, Wed 21</td><td>730 AD, Akihabara's guardian shrine, IT amulets. 7 min walk, free</td></tr>
+        <tr><td>Sanjusangen-do <span class="new">NEW</span></td><td>Kyoto, Thu 22</td><td>1,001 gilded Kannon in a 120m hall. Next to your hotel</td></tr>
+        <tr><td>Tenryu-ji</td><td>Kyoto, Fri 23</td><td>UNESCO. The oldest surviving original garden in Japan</td></tr>
+        <tr><td>Nijo Castle</td><td>Kyoto, Fri 23</td><td>UNESCO. The shogun's castle and the nightingale floors</td></tr>
+        <tr><td>Kiyomizu-dera</td><td>Kyoto, Fri 23</td><td>The great wooden stage, built 1633 without a single nail</td></tr>
+        <tr><td>Yasaka Shrine</td><td>Kyoto, Fri 23</td><td>Lantern-lit, free, on your downhill walk</td></tr>
+        <tr><td>Yasaka Pagoda</td><td>Kyoto, Fri 23</td><td>The five-storey pagoda at the end of Sannenzaka</td></tr>
+        <tr><td>Fushimi Inari</td><td>Kyoto, Sat 24</td><td>Thousands of torii gates. Empty at 07:20</td></tr>
+        <tr><td>Jogyesa</td><td>Seoul, Wed 28</td><td>Head temple of Korean Buddhism, autumn lanterns</td></tr>
+        <tr><td>Gyeongbokgung</td><td>Seoul, Wed 28</td><td>1395. Korea's main royal palace</td></tr>
+      </tbody>
+    </table></div>
+    <p>That's twelve, across four cities, with almost no extra travel added. Three of them — Kanda Myojin, Sanjusangen-do and Yasaka Shrine — cost you nothing but a short walk or a single stop.</p>
+
+    <h4>⚖️ Deliberately left out — and why</h4>
+    <div class="tw"><table>
+      <thead><tr><th>Not doing</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Kinkaku-ji (Golden Pavilion)</td><td>50 min of buses off-route for a 30-min look. See the decision box on Friday — your call</td></tr>
+        <tr><td>Ginkaku-ji + Philosopher's Path</td><td>Closes 17:00, sits north of Higashiyama. Would need a half-day you don't have</td></tr>
+        <tr><td>Ryoan-ji (rock garden)</td><td>Next to Kinkaku-ji, same travel problem. Also the least child-friendly temple in Kyoto</td></tr>
+        <tr><td>Nanzen-ji / Daitoku-ji</td><td>All excellent, all off-cluster. This is a 1.5-day Kyoto stay, not a week</td></tr>
+        <tr><td>Zojo-ji (Tokyo Tower)</td><td>Lovely, but it's a standalone trip and you already have Skytree and Shibuya Sky</td></tr>
+        <tr><td>Ghibli Museum</td><td>Not a temple, but worth saying: books out months ahead by lottery. Too late for October</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note"><strong>The honest summary:</strong> in a day and a half in Kyoto you can do four or five temples properly, or eight badly. This plan does six properly, arranged so they fall along one west-to-east line — and adds Sanjusangen-do almost for free, because you happen to be sleeping right next to it.</div>
+  </div></details>
+
+  <details class="acc"><summary><span class="st">🗣️ Three questions, answered straight</span><span class="ss">Osaka · swimming · Korean food</span></summary>
+  <div class="acc-body">
+    <p><strong>🏯 On Kyoto vs Osaka.</strong> Kyoto, no Osaka — and I'd have said that even without Jidai Matsuri. Two nights is a day and a half. Osaka is a 15-minute train ride but a whole day of attention you don't have, and its food scene, the actual reason to go, is largely octopus and pork.</p>
+    <p><strong>🚫 On freshwater swimming.</strong> Nothing worth doing. Late-October lake and river water in Japan and Korea sits around 12–16°C with no lifeguarded swims running. Any option would be a long cold journey for a bad swim. The Sheraton's heated 25m indoor pool is the swimming on this trip.</p>
+    <p><strong>🍽️ On Korean food.</strong> Harder than Japan, and temple cuisine is the answer — see <a href="#food">the food section</a>.</p>
+  </div></details>
+
+  <details class="acc" id="changelog"><summary><span class="st">🕘 Plan history</span><span class="ss">What's changed, and when</span></summary>
+  <div class="acc-body">
+    <ul class="bul">
+      <li><strong>16 Sept 2026 — site built.</strong> The plan of 5 September 2026 moved off notes and onto this page, split into collapsible sections. <span class="why">(No itinerary changes — same plan, different container.)</span></li>
+    </ul>
+    <div class="note">When you send a new itinerary, the differences against this version get logged here, and anything new or changed in the plan is marked <span class="new">NEW</span> so you can see at a glance what moved.</div>
+  </div></details>
+</section>
+
+</main>
+
+<footer>
+  <div class="fwrap">
+    <p><b>Asia 2026</b> · Ross Family · Japan &amp; South Korea · 16–31 October 2026</p>
+    <p style="margin-top:10px">Plan built 5 September 2026. Prices, opening hours, train times and festival dates verified against current sources at that date.</p>
+    <p style="margin-top:10px">⚠️ Re-check closer to departure: the Tsukiji closure calendar, the Banpo fountain schedule, and Disney Premier Access pricing — these move.</p>
+  </div>
+</footer>
 
 <script>
-  const SECRET_PASSWORD = "nugget";   // <-- secret-door password
-  const STORE_KEY = "quailFundRaised";
-
-  const css = getComputedStyle(document.documentElement);
-  const goal = parseFloat(css.getPropertyValue('--goal')) || 750;
-  const def  = parseFloat(css.getPropertyValue('--raised-default')) || 0;
-
-  function currentRaised(){
-    const saved = localStorage.getItem(STORE_KEY);
-    return saved !== null ? parseFloat(saved) : def;
-  }
-
-  function render(animate){
-    const raised = currentRaised();
-    const pct  = Math.min(100, Math.round((raised/goal)*100));
-    const left = Math.max(0, goal - raised);
-    document.getElementById('goalNum').textContent = goal.toLocaleString();
-    document.getElementById('pct').textContent = pct + '%';
-    document.getElementById('left').textContent = left.toLocaleString();
-    const rEl = document.getElementById('raisedNum');
-    if(animate){
-      let n=0, step=Math.max(1, Math.round(raised/60));
-      (function tick(){ n=Math.min(raised,n+step); rEl.textContent=n.toLocaleString();
-        if(n<raised) requestAnimationFrame(tick); })();
-    } else { rEl.textContent = raised.toLocaleString(); }
-    document.getElementById('fill').style.width = pct + '%';
-  }
-
-  // ---- secret door: tap Nugget x3 ----
-  let taps=0, tapTimer=null;
-  const overlay=document.getElementById('overlay');
-  document.getElementById('secretTile').addEventListener('click',()=>{
-    taps++; clearTimeout(tapTimer);
-    tapTimer=setTimeout(()=>taps=0,1200);
-    if(taps>=3){ taps=0; openDoor(); }
+(function(){
+  // nav chips
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var el = document.getElementById(b.dataset.go);
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    });
   });
-  function openDoor(){
-    overlay.classList.add('show');
-    document.getElementById('err').textContent='';
-    const pw=document.getElementById('pw'); pw.value=''; setTimeout(()=>pw.focus(),300);
-  }
-  function closeDoor(){ overlay.classList.remove('show'); }
-  document.getElementById('cancelBtn').addEventListener('click',closeDoor);
-  overlay.addEventListener('click',e=>{ if(e.target===overlay) closeDoor(); });
 
-  function tryEnter(){
-    const val=document.getElementById('pw').value.trim().toLowerCase();
-    if(val===SECRET_PASSWORD){ closeDoor(); unlockAdmin(); }
-    else{
-      const d=document.getElementById('door'); d.classList.remove('shake'); void d.offsetWidth; d.classList.add('shake');
-      document.getElementById('err').textContent='Not quite. Try again.';
+  // open / close all within a group
+  function all(grp, open){
+    var box = document.querySelector('[data-grp="'+grp+'"]');
+    if(!box) return;
+    box.querySelectorAll('details.acc').forEach(function(d){ d.open = open; });
+  }
+  document.querySelectorAll('[data-open]').forEach(function(b){
+    b.addEventListener('click', function(){ all(b.dataset.open, true); });
+  });
+  document.querySelectorAll('[data-close]').forEach(function(b){
+    b.addEventListener('click', function(){ all(b.dataset.close, false); });
+  });
+
+  // countdown to departure day, 16 Oct 2026
+  var dep = new Date(2026, 9, 16);           // local midnight on departure day
+  var back = new Date(2026, 9, 31, 16, 30);  // wheels down at Heathrow
+  function tick(){
+    var n = document.getElementById('cdn'), l = document.getElementById('cdl');
+    if(!n) return;
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var d = Math.round((dep - today) / 86400000);
+    if(d > 0){
+      n.textContent = d;
+      l.textContent = d === 1 ? 'day to go' : 'days to go';
+    } else if(now < back){
+      n.textContent = '🛫';
+      l.textContent = d === 0 ? 'today' : 'you are there';
+    } else {
+      n.textContent = '🏠';
+      l.textContent = 'home';
     }
   }
-  document.getElementById('enterBtn').addEventListener('click',tryEnter);
-  document.getElementById('pw').addEventListener('keydown',e=>{ if(e.key==='Enter') tryEnter(); });
+  tick();
+  setInterval(tick, 60000);
 
-  // ---- admin editor ----
-  const adminbar=document.getElementById('adminbar');
-  function unlockAdmin(){
-    adminbar.classList.add('show');
-    document.getElementById('editAmt').value = currentRaised();
+  // deep-link: opening a hash inside a closed accordion should reveal it
+  function reveal(){
+    var h = location.hash && document.querySelector(location.hash);
+    while(h){
+      if(h.tagName === 'DETAILS') h.open = true;
+      h = h.parentElement;
+    }
   }
-  document.getElementById('lockBtn').addEventListener('click',()=>adminbar.classList.remove('show'));
-  document.getElementById('saveBtn').addEventListener('click',()=>{
-    let v=parseFloat(document.getElementById('editAmt').value);
-    if(isNaN(v)||v<0) v=0;
-    localStorage.setItem(STORE_KEY, v);
-    render(false);
-    const m=document.getElementById('savedMsg'); m.classList.add('show'); setTimeout(()=>m.classList.remove('show'),1600);
-  });
-
-  // ---- ambience ----
-  const sky=document.getElementById('stars');
-  for(let i=0;i<60;i++){const s=document.createElement('i');
-    s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*70+'vh';
-    s.style.animationDelay=Math.random()*5+'s';sky.appendChild(s);}
-  for(let i=0;i<7;i++){const f=document.createElement('div');f.className='feather';f.textContent='🪶';
-    f.style.left=Math.random()*100+'vw';f.style.fontSize=(14+Math.random()*16)+'px';
-    f.style.animationDuration=(14+Math.random()*12)+'s';f.style.animationDelay=(Math.random()*12)+'s';
-    document.body.appendChild(f);}
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.15});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-  window.addEventListener('load',()=>setTimeout(()=>render(true),250));
+  window.addEventListener('hashchange', reveal);
+  reveal();
+})();
 </script>
 </body>
 </html>
